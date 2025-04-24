@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout dan Navigasi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-links">
+      
+        <a href="/" >
+          Home
+        </a>
+      
+        <a href="/friends.html" >
+          Friends
+        </a>
+      
+        <a href="/blog.html" >
+          Blog
+        </a>
+      
+    </div>
+  </div>
+</nav>
+ <h1>Layout dan Navigasi</h1>
+<p>13 Mar 2025 - </p>
+
+<p>Materi tentang Layout dan Navigasi</p>
+
+<h1 id="layout-dan-navigasi-️">Layout dan Navigasi 🖥️</h1>
+
+<p>Layout di Jekyll digunakan untuk membuat struktur halaman yang konsisten di seluruh situs. Layout ini memungkinkan kamu mengatur header, footer, dan elemen lainnya di seluruh halaman blog kamu.</p>
+
+<h2 id="menyiapkan-layout">Menyiapkan Layout:</h2>
+
+<ol>
+  <li>
+    <p><strong>File <code class="language-plaintext highlighter-rouge">_layouts/default.html</code></strong> adalah template dasar yang akan digunakan oleh halaman lain. Berikut adalah contoh layout untuk halaman utama dengan navigasi:</p>
+
+    <p>```html
+&lt;!DOCTYPE html&gt;</p>
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout dan Navigasi</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main><h1>Belajar Markdown &amp; HTML</h1>
+</main></body></html>
+  </li>
+</ol>
+<p>06 Mar 2025 - </p>
+
+<p>Materi tentang Markdown dan HTML</p>
+
+<h1 id="belajar-markdown-dan-html-">Belajar Markdown dan HTML 📚</h1>
+
+<p>Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platform seperti GitHub dan Jekyll. Dengan Markdown, kamu bisa menulis konten yang mudah dibaca dan otomatis diubah menjadi HTML.</p>
+
+<h2 id="struktur-markdown-dasar">Struktur Markdown Dasar:</h2>
+<ul>
+  <li><strong>Heading</strong>:
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
+<span class="gu">## Heading 2</span>
+<span class="gu">### Heading 3</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Paragraf</strong>: Cukup ketik teks biasa untuk membuat paragraf.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ini adalah paragraf pertama saya.
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Daftar</strong>:
+    <ul>
+      <li>Daftar tidak berurutan:
+```markdown
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3
+```</li>
+        </ul>
+      </li>
+      <li>Daftar berurutan:
+```markdown
+        <ol>
+          <li>Langkah pertama</li>
+          <li>Langkah kedua</li>
+          <li>Langkah ketiga
+```</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Tautan</strong>: Menambahkan tautan sangat mudah dengan Markdown.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Gambar</strong>:
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt Text</span><span class="p">](</span><span class="sx">https://linkgambar.com/gambar.jpg</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="keuntungan-menggunakan-markdown">Keuntungan Menggunakan Markdown:</h2>
+<ul>
+  <li><strong>Ringan dan mudah dipelajari</strong>: Cukup dengan simbol dasar seperti <code class="language-plaintext highlighter-rouge">#</code> untuk heading dan <code class="language-plaintext highlighter-rouge">-</code> untuk list.</li>
+  <li><strong>Berguna untuk blog</strong>: Markdown memudahkan pembuatan artikel yang dapat langsung diproses menjadi HTML.</li>
+</ul>
+
+<p>&lt;/main&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   &lt;footer&gt;
+     &lt;p&gt;&amp;copy; 2025 Balqis Misyia&lt;/p&gt;
+   &lt;/footer&gt;
+ &lt;/body&gt;
+</code></pre></div></div>
+<p>&lt;/html&gt;
+   ```</p>
+
+<ol>
+  <li><strong>Navigasi</strong>:
+Navigasi adalah bagian penting dari setiap website. Di atas, kita sudah membuat navigasi dasar menggunakan <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> untuk daftar tautan.</li>
+</ol>
+
+<h2 id="menambahkan-halaman">Menambahkan Halaman:</h2>
+
+<ul>
+  <li><strong>About Page</strong>: Buat halaman <code class="language-plaintext highlighter-rouge">about.md</code> dengan konten tentang kamu, dan Jekyll akan otomatis menghubungkannya dengan navigasi.</li>
+</ul>
+
+<h2 id="tips">Tips:</h2>
+
+<ul>
+  <li>Jangan lupa untuk menambahkan CSS di file <code class="language-plaintext highlighter-rouge">assets/css/style.css</code> agar tampilan lebih menarik.</li>
+  <li>Gunakan <strong>partials</strong> untuk elemen yang sering muncul seperti header dan footer, supaya kamu tidak perlu menulis kode yang sama berulang-ulang.</li>
+</ul>
+
+ <!-- isi halaman di atas -->
+
+<div class="footer">
+  <p>
+    © 2025, Created <i class="fas fa-heart"></i> by <span>alisyateriana</span>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/alisyateriana" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+  </p>
+</div>
+  </body>
+</html>
