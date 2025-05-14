@@ -1,114 +1,139 @@
-/* Umum */
+/* === UMUM === */
+/* Mengatur font utama, latar belakang dengan gradasi biru pastel, dan layout dasar halaman */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0faff;
-  color: #333;
+  font-family: 'Poppins', sans-serif; /* Font modern dan bersih */
+  background: linear-gradient(to bottom, #f0faff, #d8f1ff); /* Gradasi biru lembut */
+  color: #444; /* Warna teks utama */
   padding: 20px;
+  margin: 0;
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  position: relative;
 }
 
-/* Heading */
+/* === GELEMBUNG LATAR BELAKANG === */
+/* Menambahkan efek animasi gelembung yang naik perlahan untuk kesan dreamy dan lucu */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle 8px, #cfefff 80%, transparent 100%),
+    radial-gradient(circle 10px, #d8f6ff 80%, transparent 100%),
+    radial-gradient(circle 6px, #bae9ff 80%, transparent 100%);
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  animation: bubbleUp 30s linear infinite; /* Animasi naik terus menerus */
+  z-index: 0;
+  opacity: 0.3; /* Supaya gelembung tidak mengganggu konten utama */
+}
+
+/* Animasi gelembung naik */
+@keyframes bubbleUp {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0%;
+  }
+}
+
+/* === JUDUL UTAMA / HEADING === */
+/* Gaya untuk <h2> agar terlihat tegas dan imut */
 h2 {
-  color: #4aa3df;
-  font-size: 28px;
+  color: #4aa3df; /* Biru cerah */
+  font-size: 36px;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase; /* Kapital semua */
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
 }
 
-/* List angka */
+/* === DAFTAR BERNOMOR === */
+/* Styling untuk daftar angka (ordered list) agar konsisten dan menarik */
 ol {
   list-style-type: decimal;
   padding-left: 25px;
+  color: #298ecf; /* Biru muda */
+  font-size: 18px;
+  z-index: 1;
+  position: relative;
 }
 
-/* Paragraf */
+/* === PARAGRAF DI BLOG === */
+/* Paragraf lebih mudah dibaca dengan warna lembut dan spasi baris cukup */
 .blog-entry p {
-  color: #444;
-  font-size: 16px;
-  line-height: 1.6;
+  color: #3e6073; /* Abu kebiruan */
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 
-/* Item List */
+/* === ITEM DAFTAR (LI) === */
+/* Setiap item dalam daftar tampil seperti bubble card */
 li {
-  background-color: #d0f0ff;
-  color: #007acc;
-  padding: 12px 16px;
-  margin: 8px 0;
-  border-radius: 18px;
+  background-color: #e0f4ff; /* Biru pastel */
+  color: #0077aa; /* Biru tegas */
+  padding: 16px 20px;
+  margin: 12px 0;
+  border-radius: 25px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 122, 204, 0.15);
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 150, 200, 0.2); /* Efek bayangan */
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
+/* Efek saat mouse hover di item list */
 li:hover {
-  background-color: #c0e8ff;
-  transform: scale(1.03);
+  background-color: #cceeff; /* Lebih terang saat disentuh */
+  transform: scale(1.05); /* Membesar sedikit */
+  box-shadow: 0 10px 20px rgba(0, 150, 200, 0.3); /* Bayangan lebih jelas */
 }
 
-/* Navigasi */
+/* === NAVIGASI MENU === */
+/* Area navigasi dengan tombol-tombol lucu dan bulat */
 nav {
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
   justify-content: center;
-  background-color: #e6f7ff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 128, 255, 0.1);
-}
-
-/* Link nav */
-nav a {
-  padding: 10px 25px;
+  background-color: #daf3ff; /* Biru pastel */
   border-radius: 30px;
-  background-color: #66cfff;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 6px rgba(0, 191, 255, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 170, 220, 0.2); /* Bayangan lembut */
+  position: relative;
+  z-index: 2;
 }
 
+/* Link di dalam navigasi */
+/* Kamu bisa menambahkan properti berikut untuk hasil lebih maksimal: */
+nav a {
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: #66cfff;
+  color: white; /* Warna teks */
+  text-decoration: none; /* Menghapus garis bawah */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 170, 220, 0.3); /* Tombol lembut */
+}
+
+/* Tambahan opsional: efek hover untuk navigasi */
 nav a:hover {
   background-color: #4aa3df;
   transform: scale(1.05);
 }
 
+/* Gaya link aktif (jika ingin digunakan di halaman aktif) */
 nav a.active {
-  background-color: #b0e0e6;
-  color: #004466;
-}
-
-/* List teman */
-.friends-container ol {
-  padding-left: 25px;
-}
-
-.friends-container ol li::marker {
-  color: #4aa3df;
-}
-
-.friends-container li {
   background-color: #cceeff;
-  color: #007acc;
-  margin: 12px 0;
-  padding: 14px 22px;
-  border-radius: 18px;
-  font-size: 18px;
-  border: 1px solid #aee7f8;
-  transition: background-color 0.3s;
-}
-
-.friends-container li a {
-  text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
-}
-
-.friends-container li:hover {
-  background-color: #b3e6ff;
-}
-
-/* Tanggal blog */
-.blog-entry .tanggal {
-  color: #666;
-  font-size: 14px;
-  font-style: italic;
+  color: #0077aa;
 }

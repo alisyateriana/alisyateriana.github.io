@@ -1,9 +1,13 @@
 title: Home
 baseurl: ""
-url: "https://m-zakifahrezi.github.io/"
+url: "https://alisyateriana.github.io/"
 
 sass:
   sass_dir: _sass
   style: compressed
 
 theme: null
+
+plugins:
+  - jekyll-feed
+
