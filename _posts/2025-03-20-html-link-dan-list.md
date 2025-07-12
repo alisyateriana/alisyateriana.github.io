@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML: Link dan List"
+title: "HTML Link dan List"
 date: 2025-03-20
 ---
 

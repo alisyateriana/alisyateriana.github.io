@@ -1,0 +1,307 @@
+<head>
+  <meta charset="UTF-8">
+  <title>SweetAlert</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SweetAlert | alisya teriana</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="SweetAlert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Materi tentang SweetAler" />
+<meta property="og:description" content="Materi tentang SweetAler" />
+<link rel="canonical" href="http://localhost:4000/2025/05/12/SweetAlert.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/12/SweetAlert.html" />
+<meta property="og:site_name" content="alisya teriana" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-12T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SweetAlert" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-12T00:00:00+07:00","datePublished":"2025-05-12T00:00:00+07:00","description":"Materi tentang SweetAler","headline":"SweetAlert","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/12/SweetAlert.html"},"url":"http://localhost:4000/2025/05/12/SweetAlert.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Home </h1>
+      <p>I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        Friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        Blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <h1>SweetAlert</h1>
+<p>12 May 2025 - </p>
+
+<p>Materi tentang SweetAler</p>
+
+<h2 id="apa-itu-sweetalert">Apa itu SweetAlert?</h2>
+
+<p>SweetAlert adalah pustaka JavaScript yang digunakan untuk menampilkan popup</p>
+
+<p>alert (kotak dialog peringatan) dengan tampilan yang lebih menarik dan</p>
+
+<p>interaktif dibandingkan alert bawaan browser (window.alert()).</p>
+
+<h2 id="fungsi-utama-sweetalert">Fungsi Utama SweetAlert</h2>
+
+<p>SweetAlert digunakan dalam banyak skenario di pengembangan web, seperti:</p>
+
+<p>Menampilkan pesan sukses (success message)</p>
+
+<p>Memberi peringatan atau konfirmasi sebelum aksi penting</p>
+
+<p>Memberi tahu error atau kesalahan</p>
+
+<p>Meminta input dari pengguna (hanya di versi SweetAlert2)</p>
+
+<p>Meningkatkan user experience dengan tampilan popup yang keren</p>
+
+<p>Dua Versi: SweetAlert vs SweetAlert2</p>
+
+<p>Aspek	SweetAlert (v1)	SweetAlert2 (v2)</p>
+
+<p>Tampilan	Sederhana &amp; statis	Modern, responsif, halus</p>
+
+<p>Form input	Tidak didukung	 Mendukung berbagai input</p>
+
+<p>Kustomisasi tombol	Terbatas	Lebih lengkap &amp; fleksibel</p>
+
+<p>Dokumentasi	Kurang aktif	Selalu update &amp; lengkap</p>
+
+<p>Dukungan animasi	Dasar	 Lebih smooth dan menarik</p>
+
+<h2 id="rekomendasi-gunakan-sweetalert2-karena-lebih-fleksibel-dan-kaya-fitur">Rekomendasi: Gunakan SweetAlert2 karena lebih fleksibel dan kaya fitur.</h2>
+
+<p><strong>Cara Menggunakan SweetAlert</strong></p>
+
+<p><strong>1. Tambahkan Library</strong></p>
+
+<p>Menggunakan CDN (untuk HTML biasa):</p>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<p><strong>2.Menggunakan NPM (untuk React, Vite, Laravel, dll)</strong></p>
+
+<p><strong>npm install sweetalert2</strong></p>
+
+<p>Contoh Penggunaan</p>
+
+<p>Notifikasi Sukses</p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Berhasil!’,</p>
+
+<p>text: ‘Data sudah disimpan.’,</p>
+
+<p>icon: ‘success’,</p>
+
+<p>confirmButtonText: ‘OK’</p>
+
+<p>});</p>
+
+<p><strong>Konfirmasi Aksi</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Hapus data?’,</p>
+
+<p>text: ‘Data ini tidak bisa dikembalikan.’,</p>
+
+<p>icon: ‘warning’,</p>
+
+<p>showCancelButton: true,</p>
+
+<p>confirmButtonText: ‘Ya, hapus!’,</p>
+
+<p>cancelButtonText: ‘Batal’,</p>
+
+<p>confirmButtonColor: ‘#e3342f’,</p>
+
+<p>cancelButtonColor: ‘#6c757d’</p>
+
+<p>});</p>
+
+<p><strong>Auto Close (Timer)</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Loading…’,</p>
+
+<p>text: ‘Popup ini akan tertutup otomatis.’,</p>
+
+<p>timer: 3000,</p>
+
+<p>showConfirmButton: false</p>
+
+<p>});</p>
+
+<p><strong>Input dari Pengguna</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Masukkan email kamu’,</p>
+
+<p>input: ‘email’,</p>
+
+<p>inputPlaceholder: ‘email@example.com’,</p>
+
+<p>showCancelButton: true,</p>
+
+<p>inputValidator: (value) =&gt; {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (!value) return 'Email tidak boleh kosong!';
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>});</p>
+
+<p><strong>Callback Setelah Konfirmasi</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Yakin logout?’,</p>
+
+<p>icon: ‘question’,</p>
+
+<p>showCancelButton: true,</p>
+
+<p>confirmButtonText: ‘Ya’,</p>
+
+<p>}).then((result) =&gt; {</p>
+
+<p>if (result.isConfirmed) {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// misalnya redirect atau AJAX
+
+window.location.href = '/logout';
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>});</p>
+
+<p><strong>3.Integrasi SweetAlert2 dengan Framework</strong></p>
+
+<p><strong>jQuery</strong></p>
+
+<p><button id="btn">Klik Saya</button>
+<script>
+  $('#btn').on('click', () =&gt; {
+    Swal.fire('Diklik!', 'Tombol berhasil ditekan.', 'info');
+  });
+</script></p>
+
+<p><strong>React</strong></p>
+
+<p>js
+import Swal from ‘sweetalert2’;</p>
+
+<p>function handleClick() {
+  Swal.fire(‘Hello React!’, ‘Ini contoh dari SweetAlert2’, ‘info’);
+}</p>
+
+<p><strong>Laravel Blade</strong></p>
+
+<p><a onclick="konfirmasi()">Hapus</a>
+<script>
+function konfirmasi() {
+  Swal.fire({
+    title: 'Hapus data?',
+    text: 'Tindakan ini tidak bisa dibatalkan!',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Ya, hapus!'
+  }).then((res) =&gt; {
+    if (res.isConfirmed) {
+      window.location.href = '/hapus';
+    }
+  });
+}
+</script></p>
+
+<p><strong>Tips Penggunaan</strong></p>
+
+<p>Gunakan ikon &amp; warna sesuai konteks (merah untuk error, hijau untuk sukses)</p>
+
+<p>Jangan tampilkan popup terlalu sering (bisa mengganggu pengguna)</p>
+
+<p>Gunakan promise chaining (.then()) untuk aksi lanjutan</p>
+
+<p>Selalu test tampilan popup di berbagai browser</p>
+
+<p><strong>Dokumentasi Resmi</strong></p>
+
+<p>SweetAlert (v1)</p>
+
+<p>SweetAlert2</p>
+
+<p><strong>Kesimpulan</strong></p>
+
+<p>SweetAlert (dan SweetAlert2) adalah alat modern untuk mempercantik notifikasi</p>
+
+<p>dan konfirmasi dalam aplikasi web. Dengan desain elegan, ikon menarik, dan kemampuan</p>
+
+<p>interaktif seperti input form, SweetAlert membuat website kamu terlihat lebih profesional</p>
+
+<p>dan nyaman digunakan.</p>
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 alisya teriana. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

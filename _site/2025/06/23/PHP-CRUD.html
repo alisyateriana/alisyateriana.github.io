@@ -1,0 +1,258 @@
+<head>
+  <meta charset="UTF-8">
+  <title>PHP CRUD</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>PHP CRUD | alisya teriana</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="PHP CRUD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Materi tentang PHP CRUD" />
+<meta property="og:description" content="Materi tentang PHP CRUD" />
+<link rel="canonical" href="http://localhost:4000/2025/06/23/PHP-CRUD.html" />
+<meta property="og:url" content="http://localhost:4000/2025/06/23/PHP-CRUD.html" />
+<meta property="og:site_name" content="alisya teriana" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-23T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="PHP CRUD" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-23T00:00:00+07:00","datePublished":"2025-06-23T00:00:00+07:00","description":"Materi tentang PHP CRUD","headline":"PHP CRUD","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/06/23/PHP-CRUD.html"},"url":"http://localhost:4000/2025/06/23/PHP-CRUD.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Home </h1>
+      <p>I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        Friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        Blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <h1>PHP CRUD</h1>
+<p>23 Jun 2025 - </p>
+
+<p>Materi tentang PHP CRUD</p>
+
+<h2 id="penjelasan-crud-php--sistem-pendaftaran-siswa">Penjelasan CRUD PHP – Sistem Pendaftaran Siswa</h2>
+
+<p>CRUD adalah singkatan dari Create, Read, Update, Delete. Ini merupakan</p>
+
+<p>prinsip dasar dalam membangun aplikasi berbasis database, seperti sistem</p>
+
+<p>pendaftaran siswa yang sedang kamu buat.</p>
+
+<h2 id="berikut-penjelasan-mendalam-dan-rapi-dari-setiap-bagian-kode-sistem-php-crud">Berikut penjelasan mendalam dan rapi dari setiap bagian kode sistem PHP CRUD:</h2>
+
+<p><strong>1.koneksi.php  Menghubungkan PHP ke Database</strong></p>
+
+<p>&lt;?php
+$host = ‘localhost’;
+$username = ‘root’;
+$password = ‘’;
+$db_nama = ‘pendaftaran’;</p>
+
+<p>$koneksi = mysqli_connect($host, $username, $password, $db_nama);</p>
+
+<p>if (!$koneksi){
+    die(“Koneksi gagal: “ . mysqli_connect_error());
+} else {
+    echo “Koneksi database berhasil”;
+}
+?&gt;</p>
+
+<p>Penjelasan:</p>
+
+<p>File ini berfungsi sebagai jembatan antara PHP dan database MySQL.</p>
+
+<p>mysqli_connect() digunakan untuk membuka koneksi.</p>
+
+<p>Jika koneksi gagal, aplikasi akan dihentikan dan menampilkan error.</p>
+
+<p>Jika koneksi berhasil, akan muncul pesan sukses.</p>
+
+<p>Intinya: Tanpa koneksi ini, tidak akan ada interaksi antara aplikasi dan database.</p>
+
+<p><strong>2.index.php Halaman Menu Utama</strong></p>
+
+<p>php
+&lt;?php
+echo “</p>
+<h2>Pendaftaran Siswa Baru</h2>
+<h1>Digital Talent</h1>
+<h3>Menu</h3>
+<ul>
+    <li><a href="from-daftar.php">Daftar Baru</a></li>
+    <li><a href="list-siswa.php">Pendaftaran</a></li>
+</ul>
+<p>”;
+?&gt;</p>
+
+<p>Penjelasan</p>
+
+<p>Halaman ini menyajikan navigasi awal ke dua fitur utama:</p>
+
+<p>Formulir pendaftaran (untuk membuat data)</p>
+
+<p>Daftar siswa (untuk melihat data)</p>
+
+<p>Disusun menggunakan HTML dan dicetak melalui PHP (echo).</p>
+
+<p>Tujuan: Sebagai halaman depan yang ramah pengguna dan memudahkan akses ke fitur penting.</p>
+
+<p><strong>3.from-daftar.php Form Input Data Siswa</strong></p>
+
+<form action="create.php" method="POST">
+    <!-- input nama, alamat, jenis kelamin, agama, sekolah -->
+</form>
+
+<p>Penjelasan:
+Form ini digunakan untuk mengumpulkan data dari pengguna (siswa baru).</p>
+
+<p>Setelah diisi dan dikirim, data akan dikirim ke create.php.</p>
+
+<p>Input menggunakan elemen HTML seperti:</p>
+
+<p>text untuk nama dan sekolah</p>
+
+<p>textarea untuk alamat</p>
+
+<p>radio untuk jenis kelamin</p>
+
+<p>select untuk agama</p>
+
+<p>Fungsinya: Mengisi data siswa baru yang akan disimpan ke dalam database.</p>
+
+<p><strong>4.create.php Proses Simpan Data ke Database</strong></p>
+
+<p>include “koneksi.php”;</p>
+
+<p>$nama = $_POST[‘nama’];
+…
+$sql = “INSERT INTO siswa (…) VALUES (…)”;</p>
+
+<p>mysqli_query(…);</p>
+
+<p>Penjelasan</p>
+
+<p>Data dari form diambil menggunakan $_POST.</p>
+
+<p>Query INSERT INTO akan memasukkan data tersebut ke tabel siswa.</p>
+
+<p>Jika sukses, langsung redirect ke list-siswa.php.</p>
+
+<p>Fungsinya: Menyimpan data dari form ke dalam database secara otomatis.</p>
+
+<p><strong>5.list-siswa.php  Menampilkan Data yang Sudah Tersimpan</strong></p>
+
+<p>$sql = “SELECT * FROM siswa”;
+$result = mysqli_query($koneksi, $sql);</p>
+
+<p>Penjelasan</p>
+
+<p>Menampilkan seluruh data siswa dalam bentuk tabel HTML.</p>
+
+<p>Disediakan tombol Edit dan Delete untuk setiap baris.</p>
+
+<p>Jenis kelamin ditampilkan dalam bentuk tulisan (“Laki-laki” atau “Perempuan”).</p>
+
+<p>Tujuan: Memberikan tampilan daftar siswa secara rapi dan lengkap.</p>
+
+<p><strong>6. orm-edit.php  Menampilkan Data Lama untuk Diedit</strong></p>
+
+<p>$id = $_GET[‘id’];
+$sql = “SELECT * FROM siswa WHERE id=$id”;</p>
+
+<p>Penjelasan</p>
+
+<p>Data lama ditampilkan ke dalam form.</p>
+
+<p>Form ini berisi data siswa berdasarkan id.</p>
+
+<p>Setelah diubah, data dikirim ke update.php untuk disimpan kembali.</p>
+
+<p>Fungsi: Mengizinkan pengguna memperbarui data yang sudah ada.</p>
+
+<p><strong>7.update.php  Proses Perbarui Data ke Database</strong></p>
+
+<p>$sql = “UPDATE siswa SET … WHERE id=$id”;</p>
+
+<p>Penjelasan</p>
+
+<p>Menyimpan perubahan yang dilakukan di form-edit.php.</p>
+
+<p>Data dikirim via POST, lalu di-update berdasarkan ID.</p>
+
+<p>Fungsi: Mengubah data lama menjadi data baru di database.</p>
+
+<p><strong>8.form-delete.php  Konfirmasi Penghapusan Data</strong></p>
+
+<p>$sql = “SELECT * FROM siswa WHERE id=$id”;</p>
+
+<p>Penjelasan:
+Menampilkan data siswa yang akan dihapus untuk dikonfirmasi.</p>
+
+<p>Jika pengguna menekan tombol “Ya”, maka data dikirim ke delete.php.</p>
+
+<p>Fungsinya: Menghindari penghapusan data secara tidak sengaja.</p>
+
+<p><strong>9.delete.php Eksekusi Penghapusan dari Database</strong></p>
+
+<p>$sql = “DELETE FROM siswa WHERE id=$id”;</p>
+
+<p>Penjelasan:</p>
+
+<p>Menghapus data dari database berdasarkan ID.</p>
+
+<p>Jika berhasil, kembali ke halaman daftar siswa.</p>
+
+<p>Fungsinya: Menghapus data siswa secara permanen dari sistem.</p>
+
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 alisya teriana. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

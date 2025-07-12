@@ -1,139 +1,164 @@
-/* === UMUM === */
-/* Mengatur font utama, latar belakang dengan gradasi biru pastel, dan layout dasar halaman */
-body {
-  font-family: 'Poppins', sans-serif; /* Font modern dan bersih */
-  background: linear-gradient(to bottom, #f0faff, #d8f1ff); /* Gradasi biru lembut */
-  color: #444; /* Warna teks utama */
-  padding: 20px;
+$primary-color: #a0e9ff; // Biru bening muda
+$secondary-color: #e0f7ff; // Lebih lembut dari primary
+$font-stack: 'Poppins', sans-serif;
+
+body,
+h1,
+h2,
+p {
   margin: 0;
-  overflow-x: hidden; /* Mencegah scroll horizontal */
-  position: relative;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* === GELEMBUNG LATAR BELAKANG === */
-/* Menambahkan efek animasi gelembung yang naik perlahan untuk kesan dreamy dan lucu */
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image:
-    radial-gradient(circle 8px, #cfefff 80%, transparent 100%),
-    radial-gradient(circle 10px, #d8f6ff 80%, transparent 100%),
-    radial-gradient(circle 6px, #bae9ff 80%, transparent 100%);
-  background-repeat: repeat;
-  background-size: 150px 150px;
-  animation: bubbleUp 30s linear infinite; /* Animasi naik terus menerus */
-  z-index: 0;
-  opacity: 0.3; /* Supaya gelembung tidak mengganggu konten utama */
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #e0f7ff, #a0e9ff);
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-/* Animasi gelembung naik */
-@keyframes bubbleUp {
-  from {
-    background-position: 0 100%;
-  }
-  to {
-    background-position: 0 0%;
-  }
-}
-
-/* === JUDUL UTAMA / HEADING === */
-/* Gaya untuk <h2> agar terlihat tegas dan imut */
-h2 {
-  color: #4aa3df; /* Biru cerah */
-  font-size: 36px;
+header {
   text-align: center;
-  font-weight: bold;
-  text-transform: uppercase; /* Kapital semua */
-  letter-spacing: 2px;
-  position: relative;
-  z-index: 1;
+  padding: 24px;
+  color: #fff;
+  background: linear-gradient(to right, $primary-color, #00bfff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* === DAFTAR BERNOMOR === */
-/* Styling untuk daftar angka (ordered list) agar konsisten dan menarik */
-ol {
-  list-style-type: decimal;
-  padding-left: 25px;
-  color: #298ecf; /* Biru muda */
-  font-size: 18px;
-  z-index: 1;
-  position: relative;
+main {
+  padding: 24px;
+  margin-top: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* === PARAGRAF DI BLOG === */
-/* Paragraf lebih mudah dibaca dengan warna lembut dan spasi baris cukup */
-.blog-entry p {
-  color: #3e6073; /* Abu kebiruan */
-  font-size: 18px;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
+footer {
+  text-align: center;
+  padding: 8px;
+  margin-top: 24px;
+  color: #fff;
+  background: linear-gradient(to right, #00bfff, $primary-color);
 }
 
-/* === ITEM DAFTAR (LI) === */
-/* Setiap item dalam daftar tampil seperti bubble card */
-li {
-  background-color: #e0f4ff; /* Biru pastel */
-  color: #0077aa; /* Biru tegas */
-  padding: 16px 20px;
-  margin: 12px 0;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 18px;
-  box-shadow: 0 5px 15px rgba(0, 150, 200, 0.2); /* Efek bayangan */
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 1;
+h2 {
+  color: #333;
+  margin-bottom: 8px;
 }
 
-/* Efek saat mouse hover di item list */
-li:hover {
-  background-color: #cceeff; /* Lebih terang saat disentuh */
-  transform: scale(1.05); /* Membesar sedikit */
-  box-shadow: 0 10px 20px rgba(0, 150, 200, 0.3); /* Bayangan lebih jelas */
-}
-
-/* === NAVIGASI MENU === */
-/* Area navigasi dengan tombol-tombol lucu dan bulat */
 nav {
-  display: flex;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  justify-content: center;
-  background-color: #daf3ff; /* Biru pastel */
-  border-radius: 30px;
-  box-shadow: 0 8px 15px rgba(0, 170, 220, 0.2); /* Bayangan lembut */
-  position: relative;
-  z-index: 2;
+  margin: 24px 0;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  li {
+    float: left;
+
+    a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, $primary-color, #00bfff);
+      margin-right: 8px;
+      transition: all 0.3s ease;
+
+      &:hover:not(.active) {
+        background: linear-gradient(to right, #b3ecff, #66dfff);
+        transform: scale(1.05);
+      }
+    }
+  }
 }
 
-/* Link di dalam navigasi */
-/* Kamu bisa menambahkan properti berikut untuk hasil lebih maksimal: */
-nav a {
-  padding: 12px 30px;
-  border-radius: 25px;
-  background-color: #66cfff;
-  color: white; /* Warna teks */
-  text-decoration: none; /* Menghapus garis bawah */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 24px auto;
+  background-color: $secondary-color;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  background: linear-gradient(to right, #b3ecff, #66dfff);
+}
+
+// Tambahan untuk artikel agar rapi dan mudah dibaca
+.artikel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffffcc; // putih transparan
+  border-radius: 12px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+
+  h3, h4 {
+    margin-top: 16px;
+    color: #0077b6;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  pre {
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    margin-left: 20px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Buat semua link di dalam <ol> atau <ul> jadi biru */
+ol li a, ul li a {
+  color: #007bff; /* Biru elegan */
+  text-decoration: none;
+}
+
+ol li a:hover, ul li a:hover {
+  text-decoration: underline;
+}
+/* Semua link <a> jadi biru */
+a {
+  color: #007bff; /* Warna biru yang bagus */
+  text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 170, 220, 0.3); /* Tombol lembut */
 }
 
-/* Tambahan opsional: efek hover untuk navigasi */
-nav a:hover {
-  background-color: #4aa3df;
-  transform: scale(1.05);
-}
-
-/* Gaya link aktif (jika ingin digunakan di halaman aktif) */
-nav a.active {
-  background-color: #cceeff;
-  color: #0077aa;
+/* Saat mouse diarahkan ke link */
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Biru lebih gelap saat hover */
 }

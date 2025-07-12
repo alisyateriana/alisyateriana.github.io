@@ -1,4 +1,1634 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-14T23:48:34+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Home</title><entry><title type="html">HTML: Link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML: Link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>Materi tentang link dan lists pada HTML</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-12T12:30:01+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">alisya teriana</title><subtitle>I&apos;m alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</subtitle><entry><title type="html">Formspree</title><link href="http://localhost:4000/2025/06/23/Formspree.html" rel="alternate" type="text/html" title="Formspree" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/Formspree</id><content type="html" xml:base="http://localhost:4000/2025/06/23/Formspree.html"><![CDATA[<p>Materi tentang Formspree</p>
+
+<h2 id="apa-itu-formspree">Apa Itu Formspree?</h2>
+
+<p>Formspree adalah layanan berbasis cloud yang memungkinkan kamu menerima data</p>
+
+<p>dari formulir HTML langsung ke email tanpa harus membuat backend sendiri,</p>
+
+<p>Dengan kata lain, kamu hanya tinggal membuat form seperti biasa di HTML,</p>
+
+<p>lalu kirim data pengguna ke Formspree, dan mereka akan meneruskan isinya</p>
+
+<p>ke email milikmu.</p>
+
+<p>Cocok untuk situs statis seperti yang dibuat dengan HTML, GitHub Pages,</p>
+
+<p>Netlify, Vercel, atau bahkan Jekyll!</p>
+
+<h2 id="kenapa-pakai-formspree">Kenapa Pakai Formspree?</h2>
+
+<p>Karena tidak semua proyek web membutuhkan backend lengkap. Formspree menjadi</p>
+
+<p>solusi cepat dan sederhana untuk:</p>
+
+<p><strong>Website portofolio atau landing page</strong></p>
+
+<p>Blog pribadi</p>
+
+<p>Proyek tanpa server</p>
+
+<p>Pengembang yang ingin fokus ke frontend</p>
+
+<p><strong>Cara Kerja Formspree</strong></p>
+
+<p>Cara kerja Formspree bisa dijelaskan dalam 3 langkah:</p>
+
+<p>Buat form HTML biasa.</p>
+
+<p>Ganti atribut action ke endpoint Formspree (misalnya https://formspree.io/f/abcxyz).</p>
+
+<p>Ketika form dikirim, Formspree akan memproses data lalu mengirimnya ke email kamu.</p>
+
+<p>Tidak perlu PHP, tidak perlu API khusus, semuanya terjadi di sisi Formspree.</p>
+
+<p><strong>Contoh Form Paling Dasar</strong></p>
+
+<p>html</p>
+
+<form action="https://formspree.io/f/abcxyz" method="POST">
+
+  <input type="text" name="name" placeholder="Nama" required="" />
+
+  <input type="email" name="email" placeholder="Email" required="" />
+
+
+  <textarea name="message" placeholder="Pesan..." required=""></textarea>
+
+  <button type="submit">Kirim</button>
+
+</form>
+
+<p>Gantilah https://formspree.io/f/abcxyz dengan endpoint milikmu sendiri 
+yang bisa kamu dapatkan setelah mendaftar di situs Formspree.</p>
+
+<p>Fitur-Fitur Keren Formspree</p>
+
+<p>Kirim Langsung ke Email</p>
+
+<p>Setiap kali form dikirim, kamu langsung dapat notifikasi email berisi data isian dari pengguna.</p>
+
+<p><strong>edirect Setelah Submit</strong></p>
+
+<p>Kamu bisa mengarahkan user ke halaman “Terima Kasih” menggunakan:</p>
+
+<p>html</p>
+
+<p><input type="hidden" name="_redirect" value="https://websitekamu.com/thanks.html" /></p>
+
+<p><strong>Proteksi Anti-Spam</strong></p>
+
+<p>Gunakan honeypot (field tersembunyi) untuk menangkal bot</p>
+
+<p>Dukung Google reCAPTCHA (di versi Pro)</p>
+
+<p><strong>Validasi</strong></p>
+
+<p>Gunakan validasi HTML5 biasa (seperti required, type=”email”), dan Formspree</p>
+
+<p>akan menghormati validasi tersebut.</p>
+
+<p><strong>Custom Email Subject</strong></p>
+
+<p>Kamu bisa mengatur subjek email:</p>
+
+<p>html</p>
+
+<p><input type="hidden" name="_subject" value="Pesan Baru dari Website" /></p>
+
+<p><strong>Integrasi API &amp; Webhook</strong></p>
+
+<p>Kamu bisa hubungkan data dari form ke:</p>
+
+<p>Google Sheets</p>
+
+<p>Zapier</p>
+
+<p>Notifikasi Slack</p>
+
+<p>atau backend kamu sendiri melalui Webhook</p>
+
+<p><strong>Cara Menggunakan Formspree (Langkah Singkat)</strong></p>
+
+<p>Daftar akun di formspree.io</p>
+
+<p>Buat project baru dan ambil URL endpoint (contoh: https://formspree.io/f/xyzabc)</p>
+
+<p>Masukkan URL tersebut ke dalam atribut action form HTML</p>
+
+<p>Tambahkan field name, email, message, dsb.</p>
+
+<p>Kirim form, dan data akan masuk ke email kamu</p>
+
+<p>(Opsional) Tambahkan redirect, validasi, dan keamanan</p>
+
+<p><strong>Contoh Form Lengkap + Fitur Tambahan</strong></p>
+
+<p>html</p>
+
+<form action="https://formspree.io/f/xyzabc" method="POST">
+
+  <label>Nama:
+
+    <input type="text" name="nama" required="" />
+
+  </label>
+
+  <label>Email:
+
+    <input type="email" name="_replyto" required="" />
+
+  </label>
+
+  <label>Topik:
+
+    <select name="topik">
+
+      <option value="dukungan">Dukungan</option>
+
+      <option value="saran">Saran</option>
+
+    </select>
+
+  </label>
+
+  <label>Pesan:
+
+    <textarea name="pesan" required=""></textarea>
+
+  </label>
+
+  <!-- Redirect, subject, reply -->
+  <input type="hidden" name="_subject" value="Pesan Baru dari Form!" />
+  <input type="hidden" name="_redirect" value="https://websitekamu.com/terima-kasih.html" />
+
+  <!-- Anti-Spam (honeypot) -->
+  <input type="text" name="_gotcha" style="display:none" />
+
+  <button type="submit">Kirim</button>
+</form>
+
+<p><strong>Tips Praktis</strong></p>
+
+<p>Selalu pakai atribut required untuk validasi</p>
+
+<p>Tambahkan _replyto agar bisa langsung membalas dari email</p>
+
+<p>Gunakan honeypot agar form tidak mudah dimanfaatkan bot</p>
+
+<p>Siapkan halaman thank-you.html untuk pengalaman pengguna yang baik</p>
+
+<p>Untuk kebutuhan kompleks, upgrade ke Formspree Pro agar bisa pakai reCAPTCHA dan webhook</p>
+
+<p>Dokumentasi &amp; Bantuan</p>
+
+<p>Website resmi Formspree</p>
+
+<p>Dokumentasi lengkap</p>
+
+<p>GitHub Repository</p>
+
+<p><strong>Kesimpulan</strong></p>
+
+<p>Formspree adalah solusi praktis untuk menerima input dari pengguna tanpa</p>
+
+<p>backend rumit, Cukup buat form HTML biasa, hubungkan ke endpoint Formspree,</p>
+
+<p>dan biarkan mereka mengurus sisanya—mulai dari validasi hingga pengiriman email.</p>
+
+<p>Dengan fitur seperti notifikasi email, integrasi API, proteksi spam, dan kemudahan</p>
+
+<p>penggunaan, Formspree sangat ideal untuk pengembang front-end dan website statis.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Formspree]]></summary></entry><entry><title type="html">PHP CRUD</title><link href="http://localhost:4000/2025/06/23/PHP-CRUD.html" rel="alternate" type="text/html" title="PHP CRUD" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/PHP%20CRUD</id><content type="html" xml:base="http://localhost:4000/2025/06/23/PHP-CRUD.html"><![CDATA[<p>Materi tentang PHP CRUD</p>
+
+<h2 id="penjelasan-crud-php--sistem-pendaftaran-siswa">Penjelasan CRUD PHP – Sistem Pendaftaran Siswa</h2>
+
+<p>CRUD adalah singkatan dari Create, Read, Update, Delete. Ini merupakan</p>
+
+<p>prinsip dasar dalam membangun aplikasi berbasis database, seperti sistem</p>
+
+<p>pendaftaran siswa yang sedang kamu buat.</p>
+
+<h2 id="berikut-penjelasan-mendalam-dan-rapi-dari-setiap-bagian-kode-sistem-php-crud">Berikut penjelasan mendalam dan rapi dari setiap bagian kode sistem PHP CRUD:</h2>
+
+<p><strong>1.koneksi.php  Menghubungkan PHP ke Database</strong></p>
+
+<p>&lt;?php
+$host = ‘localhost’;
+$username = ‘root’;
+$password = ‘’;
+$db_nama = ‘pendaftaran’;</p>
+
+<p>$koneksi = mysqli_connect($host, $username, $password, $db_nama);</p>
+
+<p>if (!$koneksi){
+    die(“Koneksi gagal: “ . mysqli_connect_error());
+} else {
+    echo “Koneksi database berhasil”;
+}
+?&gt;</p>
+
+<p>Penjelasan:</p>
+
+<p>File ini berfungsi sebagai jembatan antara PHP dan database MySQL.</p>
+
+<p>mysqli_connect() digunakan untuk membuka koneksi.</p>
+
+<p>Jika koneksi gagal, aplikasi akan dihentikan dan menampilkan error.</p>
+
+<p>Jika koneksi berhasil, akan muncul pesan sukses.</p>
+
+<p>Intinya: Tanpa koneksi ini, tidak akan ada interaksi antara aplikasi dan database.</p>
+
+<p><strong>2.index.php Halaman Menu Utama</strong></p>
+
+<p>php
+&lt;?php
+echo “</p>
+<h2>Pendaftaran Siswa Baru</h2>
+<h1>Digital Talent</h1>
+<h3>Menu</h3>
+<ul>
+    <li><a href="from-daftar.php">Daftar Baru</a></li>
+    <li><a href="list-siswa.php">Pendaftaran</a></li>
+</ul>
+<p>”;
+?&gt;</p>
+
+<p>Penjelasan</p>
+
+<p>Halaman ini menyajikan navigasi awal ke dua fitur utama:</p>
+
+<p>Formulir pendaftaran (untuk membuat data)</p>
+
+<p>Daftar siswa (untuk melihat data)</p>
+
+<p>Disusun menggunakan HTML dan dicetak melalui PHP (echo).</p>
+
+<p>Tujuan: Sebagai halaman depan yang ramah pengguna dan memudahkan akses ke fitur penting.</p>
+
+<p><strong>3.from-daftar.php Form Input Data Siswa</strong></p>
+
+<form action="create.php" method="POST">
+    <!-- input nama, alamat, jenis kelamin, agama, sekolah -->
+</form>
+
+<p>Penjelasan:
+Form ini digunakan untuk mengumpulkan data dari pengguna (siswa baru).</p>
+
+<p>Setelah diisi dan dikirim, data akan dikirim ke create.php.</p>
+
+<p>Input menggunakan elemen HTML seperti:</p>
+
+<p>text untuk nama dan sekolah</p>
+
+<p>textarea untuk alamat</p>
+
+<p>radio untuk jenis kelamin</p>
+
+<p>select untuk agama</p>
+
+<p>Fungsinya: Mengisi data siswa baru yang akan disimpan ke dalam database.</p>
+
+<p><strong>4.create.php Proses Simpan Data ke Database</strong></p>
+
+<p>include “koneksi.php”;</p>
+
+<p>$nama = $_POST[‘nama’];
+…
+$sql = “INSERT INTO siswa (…) VALUES (…)”;</p>
+
+<p>mysqli_query(…);</p>
+
+<p>Penjelasan</p>
+
+<p>Data dari form diambil menggunakan $_POST.</p>
+
+<p>Query INSERT INTO akan memasukkan data tersebut ke tabel siswa.</p>
+
+<p>Jika sukses, langsung redirect ke list-siswa.php.</p>
+
+<p>Fungsinya: Menyimpan data dari form ke dalam database secara otomatis.</p>
+
+<p><strong>5.list-siswa.php  Menampilkan Data yang Sudah Tersimpan</strong></p>
+
+<p>$sql = “SELECT * FROM siswa”;
+$result = mysqli_query($koneksi, $sql);</p>
+
+<p>Penjelasan</p>
+
+<p>Menampilkan seluruh data siswa dalam bentuk tabel HTML.</p>
+
+<p>Disediakan tombol Edit dan Delete untuk setiap baris.</p>
+
+<p>Jenis kelamin ditampilkan dalam bentuk tulisan (“Laki-laki” atau “Perempuan”).</p>
+
+<p>Tujuan: Memberikan tampilan daftar siswa secara rapi dan lengkap.</p>
+
+<p><strong>6. orm-edit.php  Menampilkan Data Lama untuk Diedit</strong></p>
+
+<p>$id = $_GET[‘id’];
+$sql = “SELECT * FROM siswa WHERE id=$id”;</p>
+
+<p>Penjelasan</p>
+
+<p>Data lama ditampilkan ke dalam form.</p>
+
+<p>Form ini berisi data siswa berdasarkan id.</p>
+
+<p>Setelah diubah, data dikirim ke update.php untuk disimpan kembali.</p>
+
+<p>Fungsi: Mengizinkan pengguna memperbarui data yang sudah ada.</p>
+
+<p><strong>7.update.php  Proses Perbarui Data ke Database</strong></p>
+
+<p>$sql = “UPDATE siswa SET … WHERE id=$id”;</p>
+
+<p>Penjelasan</p>
+
+<p>Menyimpan perubahan yang dilakukan di form-edit.php.</p>
+
+<p>Data dikirim via POST, lalu di-update berdasarkan ID.</p>
+
+<p>Fungsi: Mengubah data lama menjadi data baru di database.</p>
+
+<p><strong>8.form-delete.php  Konfirmasi Penghapusan Data</strong></p>
+
+<p>$sql = “SELECT * FROM siswa WHERE id=$id”;</p>
+
+<p>Penjelasan:
+Menampilkan data siswa yang akan dihapus untuk dikonfirmasi.</p>
+
+<p>Jika pengguna menekan tombol “Ya”, maka data dikirim ke delete.php.</p>
+
+<p>Fungsinya: Menghindari penghapusan data secara tidak sengaja.</p>
+
+<p><strong>9.delete.php Eksekusi Penghapusan dari Database</strong></p>
+
+<p>$sql = “DELETE FROM siswa WHERE id=$id”;</p>
+
+<p>Penjelasan:</p>
+
+<p>Menghapus data dari database berdasarkan ID.</p>
+
+<p>Jika berhasil, kembali ke halaman daftar siswa.</p>
+
+<p>Fungsinya: Menghapus data siswa secara permanen dari sistem.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang PHP CRUD]]></summary></entry><entry><title type="html">Single Menu</title><link href="http://localhost:4000/2025/06/23/Single-Menu.html" rel="alternate" type="text/html" title="Single Menu" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/Single-Menu</id><content type="html" xml:base="http://localhost:4000/2025/06/23/Single-Menu.html"><![CDATA[<p>Materi tentang Single Menu</p>
+
+<h2 id="penjelasan-lengkap-tentang-single-menu-dalam-ui-dan-form">Penjelasan Lengkap tentang Single Menu dalam UI dan Form</h2>
+
+<p>Secara umum, Single Menu dalam dunia UI (User Interface) merujuk pada komponen</p>
+
+<p>pemilihan (selection input) yang hanya memperbolehkan satu pilihan aktif dalam</p>
+
+<p>satu waktu. Komponen ini banyak digunakan dalam formulir, pengaturan sistem,</p>
+
+<p>survei online, maupun tampilan antarmuka aplikasi berbasis web dan mobile.</p>
+
+<p>Single Menu berbeda dengan navigasi menu utama (seperti menu Home, About,</p>
+
+<p>Contact), karena fokusnya bukan pada navigasi antar halaman, melainkan pada</p>
+
+<p>pilihan antar opsi dalam satu konteks.</p>
+
+<h2 id="tujuan-penggunaan">Tujuan Penggunaan</h2>
+
+<p>Single Menu dirancang untuk Menyederhanakan pilihan bagi pengguna</p>
+
+<p>Menghindari ambiguitas input (karena hanya satu pilihan yang diizinkan)</p>
+
+<p>Mengarahkan pengguna untuk mengambil keputusan dengan cepat Meningkatkan</p>
+
+<p>pengalaman pengguna (user experience) melalui antarmuka yang efisien dan rapi</p>
+
+<h2 id="jenis-jenis-komponen-single-menu">Jenis-Jenis Komponen Single Menu</h2>
+
+<p>Berikut adalah jenis-jenis komponen pilihan tunggal dan ganda (single &amp; multiple choice),</p>
+
+<p>dengan fokus utama pada Single Menu (single choice):</p>
+
+<h2 id="1-radio-button--komponen-pilihan-tunggal-klasik">1. Radio Button – Komponen Pilihan Tunggal Klasik</h2>
+
+<p>Fungsi Utama Memungkinkan pengguna memilih satu saja dari sekumpulan pilihan yang tersedia.</p>
+
+<p>Contoh HTML</p>
+
+<p>Pilih status:</p>
+<p><input type="radio" name="status" value="aktif" /> Aktif<br />
+<input type="radio" name="status" value="nonaktif" /> Nonaktif<br />
+<input type="radio" name="status" value="pending" /> Pending</p>
+
+<p>Karakteristik Semua input radio harus memiliki atribut name yang sama agar sistem mengenal</p>
+
+<p>bahwa mereka dalam satu grup. Saat salah satu dipilih, yang lain otomatis tidak aktif,</p>
+
+<p>Cocok digunakan untuk data seperti Jenis kelamin Status akun Kategori pilihan tetap</p>
+
+<p>(misalnya, metode pengiriman)</p>
+
+<h2 id="kelebihan">Kelebihan</h2>
+
+<p>Mudah dipahami oleh pengguna</p>
+
+<p>Tidak membutuhkan JavaScript</p>
+
+<p>Kompatibel di semua browser</p>
+
+<h2 id="kekurangan">Kekurangan</h2>
+
+<p>Jika terlalu banyak pilihan, antarmuka menjadi panjang</p>
+
+<h2 id="2-toggle-button--button-group--versi-interaktif-dari-radio-button">2. Toggle Button / Button Group – Versi Interaktif dari Radio Button</h2>
+
+<p>Fungsi Utama Memberikan pengalaman pemilihan satu dari beberapa opsi, namun</p>
+
+<p>dalam bentuk tombol yang lebih interaktif dan estetik.</p>
+
+<p>Contoh HTML (Bootstrap 5)</p>
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="viewmode" id="grid" autocomplete="off" checked="" />
+  <label class="btn btn-outline-primary" for="grid">Grid</label>
+
+  <input type="radio" class="btn-check" name="viewmode" id="list" autocomplete="off" />
+  <label class="btn btn-outline-primary" for="list">List</label>
+</div>
+
+<h2 id="karakteristik">Karakteristik</h2>
+
+<p>Menggunakan input type=”radio” namun disajikan sebagai tombol</p>
+
+<p>Sering digunakan dalam aplikasi modern (terutama mobile)</p>
+
+<p>Memberikan feedback visual saat tombol aktif</p>
+
+<h2 id="kelebihan-1">Kelebihan</h2>
+
+<p>Tampil modern dan interaktif</p>
+
+<p>Mudah dipadukan dengan framework UI seperti Bootstrap</p>
+
+<p>Cocok untuk pengaturan visual, mode tampilan, dll.</p>
+
+<h2 id="kekurangan-1">Kekurangan</h2>
+
+<p>Membutuhkan CSS tambahan atau library seperti Bootstrap</p>
+
+<p>Bisa membingungkan jika tidak diberi label yang jelas</p>
+
+<h2 id="3-checkbox--pilihan-ganda-bukan-single-menu-tapi-penting-diketahui">3. Checkbox – Pilihan Ganda (Bukan Single Menu, tapi Penting Diketahui)</h2>
+
+<p>Fungsi Utama Digunakan ketika pengguna boleh memilih lebih dari satu opsi.</p>
+
+<p>Contoh HTML</p>
+
+<p>Pilih minat:</p>
+<p><input type="checkbox" name="minat[]" value="musik" /> Musik<br />
+<input type="checkbox" name="minat[]" value="membaca" /> Membaca<br />
+<input type="checkbox" name="minat[]" value="game" /> Bermain Game</p>
+
+<h2 id="karakteristik-1">Karakteristik</h2>
+
+<p>Checkbox tidak saling eksklusif</p>
+
+<p>Cocok untuk</p>
+
+<p>Minat atau hobi</p>
+
+<p>Fitur tambahan</p>
+
+<p>Multi-tag atau multi-kategori</p>
+
+<p>Note: Checkbox termasuk kategori multiple choice dan bukan bagian dari single menu, tapi perlu diketahui karena penggunaannya sangat dekat.</p>
+
+<h2 id="4-select--combo-box--dropdown-menu">4. Select / Combo Box – Dropdown Menu</h2>
+
+<p>Fungsi Utama</p>
+
+<p>Menampilkan daftar pilihan dalam bentuk dropdown agar hanya satu opsi yang bisa dipilih (default).</p>
+
+<p>Contoh HTML:</p>
+
+<p><label for="jurusan">Pilih jurusan:</label>
+<select id="jurusan" name="jurusan">
+  <option value="tkj">TKJ</option>
+  <option value="rpl">RPL</option>
+  <option value="mm">Multimedia</option>
+</select></p>
+
+<h2 id="karakteristik-2">Karakteristik</h2>
+
+<p>Secara default hanya bisa memilih satu</p>
+
+<p>Untuk multi-select, tambahkan atribut multiple</p>
+
+<p>Cocok digunakan untuk:</p>
+
+<p>Provinsi/Kota</p>
+
+<p>Negara</p>
+
+<p>Kategori produk</p>
+
+<p>Pilihan yang panjang</p>
+
+<h2 id="kelebihan-2">Kelebihan</h2>
+
+<p>Hemat tempat di UI</p>
+
+<p>Praktis untuk pilihan yang panjang</p>
+
+<p>Mudah diimplementasikan</p>
+
+<h2 id="kekurangan-2">Kekurangan</h2>
+
+<p>Tidak menampilkan semua pilihan secara langsung</p>
+
+<p>Kurang intuitif untuk pengguna baru jika opsi terlalu banyak</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Single Menu]]></summary></entry><entry><title type="html">Bootstrap</title><link href="http://localhost:4000/2025/06/02/Bootstrap.html" rel="alternate" type="text/html" title="Bootstrap" /><published>2025-06-02T00:00:00+07:00</published><updated>2025-06-02T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/02/Bootstrap</id><content type="html" xml:base="http://localhost:4000/2025/06/02/Bootstrap.html"><![CDATA[<p>Materi tentang Bootstrap</p>
+
+<h2 id="apa-itu-bootstrap">Apa Itu Bootstrap?</h2>
+
+<p>Bootstrap adalah framework front-end berbasis HTML, CSS, dan JavaScript</p>
+
+<p>yang digunakan untuk membangun antarmuka web (UI) yang modern, responsif,</p>
+
+<p>dan mobile-friendly,Bootstrap dibuat oleh tim dari Twitter pada tahun 2011</p>
+
+<p>(oleh Mark Otto &amp; Jacob Thornton) sebagai solusi agar tampilan web menjadi</p>
+
+<p>seragam di berbagai browser dan perangkat. Kini, Bootstrap sudah menjadi</p>
+
+<p>salah satu framework paling populer di dunia pengembangan web.</p>
+
+<p>Tujuan utama Bootstrap adalah membuat desain web lebih cepat, mudah, dan konsisten.</p>
+
+<p><strong>Kelebihan Bootstrap</strong></p>
+
+<p>Berikut adalah alasan kenapa Bootstrap banyak digunakan</p>
+
+<p><strong>Keunggulan	Penjelasan</strong></p>
+
+<p>Mobile-First	Bootstrap dirancang untuk tampilan perangkat kecil dulu, lalu diperluas.</p>
+
+<p>Responsif	Gunakan grid 12-kolom untuk tampilan fleksibel di semua ukuran layar.</p>
+
+<p>Cepat &amp; Praktis	Tinggal pakai class tanpa menulis CSS panjang.</p>
+
+<p>Komponen Lengkap	Tombol, kartu, form, navigasi, alert, carousel, modal, dll.</p>
+
+<p>Konsisten	Tampilannya stabil di berbagai browser &amp; perangkat.</p>
+
+<p>Dokumentasi	Panduan resmi Bootstrap sangat lengkap dan mudah diikuti.</p>
+
+<h2 id="cara-menggunakan-bootstrap">Cara Menggunakan Bootstrap</h2>
+
+<p><strong>1. Melalui CDN (Cara Praktis)</strong></p>
+
+<p>Cukup tambahkan dua baris kode ke dalam file HTML:</p>
+
+<!-- Tambahkan di dalam <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Tambahkan sebelum </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<p><strong>2. Menggunakan NPM (Untuk Proyek Build Tools)</strong></p>
+
+<p>Jalankan perintah:</p>
+
+<p>npm install bootstrap</p>
+
+<p>Lalu import di file JS atau SCSS kamu:</p>
+
+<p>js
+import ‘bootstrap/dist/css/bootstrap.min.css’;</p>
+
+<p>import ‘bootstrap/dist/js/bootstrap.bundle.min.js’;</p>
+
+<h2 id="komponen-komponen-penting-di-bootstrap">Komponen-Komponen Penting di Bootstrap</h2>
+
+<p>Bootstrap menyediakan banyak komponen siap pakai. Berikut beberapa yang paling sering digunakan:</p>
+
+<p>Tombol</p>
+
+<p><button class="btn btn-primary">Simpan</button>
+<button class="btn btn-danger">Hapus</button></p>
+
+<p><strong>1. Navigasi (Navbar)</strong></p>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">MyWebsite</a>
+</nav>
+
+<p><strong>2.Kartu (Card)</strong></p>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">Judul Card</h5>
+    <p class="card-text">Deskripsi singkat isi konten.</p>
+  </div>
+</div>
+
+<p><strong>3. Formulir (Form)</strong></p>
+
+<form>
+  <div class="mb-3">
+    <label for="nama" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama" />
+  </div>
+</form>
+
+<p><strong>4 .Peringatan (Alert)</strong></p>
+
+<div class="alert alert-warning" role="alert">
+  Peringatan: Form belum lengkap!
+</div>
+
+<p><strong>5. Modal (Dialog Pop-up)</strong></p>
+
+<!-- Tombol pembuka -->
+<p><button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contohModal">Buka Info</button></p>
+
+<!-- Struktur Modal -->
+<div class="modal fade" id="contohModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Judul Modal</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Ini isi dari modal popup.
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><strong>6.Sistem Grid di Bootstrap</strong></p>
+
+<p>Bootstrap menggunakan sistem grid 12 kolom yang fleksibel. Contoh layout 3 kolom seimbang:</p>
+
+<div class="row">
+  <div class="col-4">Kolom 1</div>
+  <div class="col-4">Kolom 2</div>
+  <div class="col-4">Kolom 3</div>
+</div>
+
+<p>Grid ini bisa diatur supaya berbeda di layar kecil (mobile) dan besar (desktop), contoh:</p>
+
+<div class="row">
+
+  <div class="col-12 col-md-6">Kolom 1</div>
+
+  <div class="col-12 col-md-6">Kolom 2</div>
+
+</div>
+
+<p><strong>Kesimpulan</strong></p>
+
+<p>Bootstrap adalah solusi praktis dan cepat untuk membangun tampilan website yang modern,</p>
+
+<p>responsif, dan user-friendly. Tanpa harus menulis CSS dari awal, kamu bisa menggunakan</p>
+
+<p>berbagai komponen siap pakai hanya dengan menambahkan class tertentu.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Bootstrap]]></summary></entry><entry><title type="html">Dasar PHP</title><link href="http://localhost:4000/2025/06/02/Dasar-PHP.html" rel="alternate" type="text/html" title="Dasar PHP" /><published>2025-06-02T00:00:00+07:00</published><updated>2025-06-02T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/02/Dasar-PHP</id><content type="html" xml:base="http://localhost:4000/2025/06/02/Dasar-PHP.html"><![CDATA[<p>Materi tentang Dasar PHP</p>
+
+<h2 id="apa-itu-php">Apa Itu PHP?</h2>
+
+<p>PHP adalah singkatan dari Hypertext Preprocessor, yaitu bahasa pemrograman</p>
+
+<p>server-side yang digunakan untuk membangun halaman web dinamis. Artinya,</p>
+
+<p>kode PHP diproses di sisi server, dan hasil akhirnya berupa HTML yang</p>
+
+<p>dikirimkan ke browser pengguna,PHP termasuk bahasa pemrograman open-source</p>
+
+<p>yang sangat populer dalam pengembangan website karena mudah digunakan, fleksibel,</p>
+
+<p>dan terintegrasi langsung dengan HTML serta MySQL.</p>
+
+<h2 id="fungsi-utama-php">Fungsi Utama PHP</h2>
+
+<p>PHP sangat sering digunakan untuk membuat fitur-fitur web seperti:</p>
+
+<p><strong>Memproses data dari formulir HTML</strong></p>
+
+<p>Menghubungkan dan berinteraksi dengan database (misalnya MySQL)</p>
+
+<p>Membuat sistem login dan register</p>
+
+<p>Mengelola file (upload, simpan, hapus, dll)</p>
+
+<p>Mengirim email otomatis</p>
+
+<p>Membangun aplikasi berbasis logika (validasi, perhitungan, dll)</p>
+
+<p><strong>Cara Menjalankan PHP</strong></p>
+
+<p>Karena PHP adalah bahasa server-side, maka kita membutuhkan:</p>
+
+<p>Web Server seperti Apache</p>
+
+<p>PHP Interpreter</p>
+
+<p>(Opsional) Database Server seperti MySQL</p>
+
+<p><strong>Solusi Praktis: XAMPP / Laragon</strong></p>
+
+<p>Untuk pemula, menggunakan XAMPP atau Laragon sangat direkomendasikan.</p>
+
+<p><strong>Langkah-langkah</strong></p>
+
+<p>Download XAMPP dari https://www.apachefriends.org</p>
+
+<p>Install dan jalankan Apache &amp; MySQL</p>
+
+<p>Simpan file PHP ke folder htdocs (misalnya: C:\xampp\htdocs)</p>
+
+<p>Akses melalui browser dengan mengetik:</p>
+
+<p>http://localhost/namafile.php</p>
+
+<p><strong>Struktur Dasar File PHP</strong></p>
+
+<p>File PHP memiliki ekstensi .php. Contoh file paling sederhana:</p>
+
+<p>php
+<!-- file: hello.php -->
+&lt;?php
+  echo “Halo, dunia!”;
+?&gt;
+Ketika dibuka melalui localhost di browser, maka yang tampil adalah:</p>
+
+<p>Halo, dunia!</p>
+
+<p><strong>Dasar-Dasar Sintaks PHP</strong></p>
+
+<p><strong>1. Tag Pembuka PHP</strong></p>
+
+<p>php
+&lt;?php
+// kode PHP ditulis di sini
+?&gt;</p>
+
+<p><strong>2. Output ke Browser</strong></p>
+
+<p>php
+echo “Ini output”;
+print “Ini juga mencetak”;</p>
+
+<p><strong>3 Variabel</strong></p>
+
+<p>php
+$nama = “Lina”;
+$umur = 20;</p>
+
+<p>echo “Halo, saya $nama, umur saya $umur tahun.”;</p>
+
+<p><strong>4. Tipe Data</strong></p>
+
+<p>String: “teks”</p>
+
+<p>Integer: 1, 20, -10</p>
+
+<p>Float: 3.14</p>
+
+<p>Boolean: true, false</p>
+
+<p>Array: [“apel”, “jeruk”]</p>
+
+<p>Object: (dibahas di OOP)</p>
+
+<h2 id="operator---percabangan">Operator &amp;  Percabangan</h2>
+
+<p>Operator Aritmatika</p>
+
+<p>$a = 10;
+$b = 5;</p>
+
+<p>echo $a + $b;  // 15
+echo $a * $b;  // 50
+Percabangan If-Else:</p>
+
+<p>$nilai = 78;</p>
+
+<p>if ($nilai &gt;= 85) {
+  echo “Nilai A”;
+} elseif ($nilai &gt;= 70) {
+  echo “Nilai B”;
+} else {
+  echo “Nilai C”;
+}</p>
+
+<h2 id="perulangan-looping">Perulangan (Looping)</h2>
+
+<p><strong>1. For Loop</strong></p>
+
+<p>for ($i = 1; $i &lt;= 3; $i++) {
+  echo “Angka ke-$i<br />”;
+}</p>
+
+<p><strong>2. While Loop</strong></p>
+
+<p>$i = 1;
+while ($i &lt;= 3) {
+  echo “Baris $i<br />”;
+  $i++;
+}</p>
+
+<p><strong>form HTML dan $_POST / $_GET</strong></p>
+
+<p>Form HTML</p>
+
+<form action="proses.php" method="post">
+  Nama: <input type="text" name="nama" />
+  <input type="submit" value="Kirim" />
+</form>
+
+<p><strong>File proses.php</strong></p>
+
+<p>&lt;?php
+$nama = $_POST[‘nama’];
+echo “Halo, $nama!”;
+?&gt;
+$_POST digunakan untuk mengambil data dari form dengan method POST.
+$_GET digunakan untuk form atau URL dengan method GET.</p>
+
+<p><strong>Array di PHP</strong></p>
+
+<p>$buah = [“apel”, “jeruk”, “pisang”];</p>
+
+<p>echo $buah[1]; // Output: jeruk</p>
+
+<p>foreach ($buah as $item) {
+  echo $item . “<br />”;
+}</p>
+
+<p>Koneksi ke Database (MySQL)</p>
+
+<p><strong>1. Membuat Koneksi</strong></p>
+
+<p>php</p>
+
+<p>$conn = mysqli_connect(“localhost”, “root”, “”, “nama_database”);</p>
+
+<p>if (!$conn) {
+  die(“Koneksi gagal: “ . mysqli_connect_error());
+}</p>
+
+<p><strong>2. Menampilkan Data</strong>
+php
+$result = mysqli_query($conn, “SELECT * FROM siswa”);</p>
+
+<p>while ($row = mysqli_fetch_assoc($result)) {
+  echo $row[‘nama’] . “<br />”;
+}</p>
+
+<p><strong>3.Fungsi di PHP</strong></p>
+
+<p>php
+function sapa($nama) {
+  return “Halo, $nama!”;
+}</p>
+
+<p>echo sapa(“Alya”);</p>
+
+<p><strong>4.Include dan File Terpisah</strong></p>
+
+<p>header.php</p>
+
+<p>echo “&lt;h1&gt;Judul Website&lt;/h1&gt;”;
+index.php
+php
+include ‘header.php’;</p>
+
+<p>echo “&lt;p&gt;Selamat datang!&lt;/p&gt;”;</p>
+
+<p>include atau require digunakan</p>
+
+<p>untuk menyisipkan file lain ke dalam</p>
+
+<p>file PHP utama. Berguna untuk template,</p>
+
+<p>menu, dan footer.</p>
+
+<p><strong>5Fitur Tambahan (Lanjutan)</strong></p>
+
+<p>PHP memiliki fitur lanjutan untuk membuat aplikasi yang lebih kompleks, seperti:</p>
+
+<p>Session &amp; Cookies (Login, keranjang belanja)</p>
+
+<p>Upload file</p>
+
+<p>Validasi form</p>
+
+<p>Sistem Login &amp; Register</p>
+
+<p>OOP (Object Oriented Programming)</p>
+
+<p>AJAX &amp; API dengan PHP</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Dasar PHP]]></summary></entry><entry><title type="html">SweetAlert</title><link href="http://localhost:4000/2025/05/12/SweetAlert.html" rel="alternate" type="text/html" title="SweetAlert" /><published>2025-05-12T00:00:00+07:00</published><updated>2025-05-12T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/12/SweetAlert</id><content type="html" xml:base="http://localhost:4000/2025/05/12/SweetAlert.html"><![CDATA[<p>Materi tentang SweetAler</p>
+
+<h2 id="apa-itu-sweetalert">Apa itu SweetAlert?</h2>
+
+<p>SweetAlert adalah pustaka JavaScript yang digunakan untuk menampilkan popup</p>
+
+<p>alert (kotak dialog peringatan) dengan tampilan yang lebih menarik dan</p>
+
+<p>interaktif dibandingkan alert bawaan browser (window.alert()).</p>
+
+<h2 id="fungsi-utama-sweetalert">Fungsi Utama SweetAlert</h2>
+
+<p>SweetAlert digunakan dalam banyak skenario di pengembangan web, seperti:</p>
+
+<p>Menampilkan pesan sukses (success message)</p>
+
+<p>Memberi peringatan atau konfirmasi sebelum aksi penting</p>
+
+<p>Memberi tahu error atau kesalahan</p>
+
+<p>Meminta input dari pengguna (hanya di versi SweetAlert2)</p>
+
+<p>Meningkatkan user experience dengan tampilan popup yang keren</p>
+
+<p>Dua Versi: SweetAlert vs SweetAlert2</p>
+
+<p>Aspek	SweetAlert (v1)	SweetAlert2 (v2)</p>
+
+<p>Tampilan	Sederhana &amp; statis	Modern, responsif, halus</p>
+
+<p>Form input	Tidak didukung	 Mendukung berbagai input</p>
+
+<p>Kustomisasi tombol	Terbatas	Lebih lengkap &amp; fleksibel</p>
+
+<p>Dokumentasi	Kurang aktif	Selalu update &amp; lengkap</p>
+
+<p>Dukungan animasi	Dasar	 Lebih smooth dan menarik</p>
+
+<h2 id="rekomendasi-gunakan-sweetalert2-karena-lebih-fleksibel-dan-kaya-fitur">Rekomendasi: Gunakan SweetAlert2 karena lebih fleksibel dan kaya fitur.</h2>
+
+<p><strong>Cara Menggunakan SweetAlert</strong></p>
+
+<p><strong>1. Tambahkan Library</strong></p>
+
+<p>Menggunakan CDN (untuk HTML biasa):</p>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<p><strong>2.Menggunakan NPM (untuk React, Vite, Laravel, dll)</strong></p>
+
+<p><strong>npm install sweetalert2</strong></p>
+
+<p>Contoh Penggunaan</p>
+
+<p>Notifikasi Sukses</p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Berhasil!’,</p>
+
+<p>text: ‘Data sudah disimpan.’,</p>
+
+<p>icon: ‘success’,</p>
+
+<p>confirmButtonText: ‘OK’</p>
+
+<p>});</p>
+
+<p><strong>Konfirmasi Aksi</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Hapus data?’,</p>
+
+<p>text: ‘Data ini tidak bisa dikembalikan.’,</p>
+
+<p>icon: ‘warning’,</p>
+
+<p>showCancelButton: true,</p>
+
+<p>confirmButtonText: ‘Ya, hapus!’,</p>
+
+<p>cancelButtonText: ‘Batal’,</p>
+
+<p>confirmButtonColor: ‘#e3342f’,</p>
+
+<p>cancelButtonColor: ‘#6c757d’</p>
+
+<p>});</p>
+
+<p><strong>Auto Close (Timer)</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Loading…’,</p>
+
+<p>text: ‘Popup ini akan tertutup otomatis.’,</p>
+
+<p>timer: 3000,</p>
+
+<p>showConfirmButton: false</p>
+
+<p>});</p>
+
+<p><strong>Input dari Pengguna</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Masukkan email kamu’,</p>
+
+<p>input: ‘email’,</p>
+
+<p>inputPlaceholder: ‘email@example.com’,</p>
+
+<p>showCancelButton: true,</p>
+
+<p>inputValidator: (value) =&gt; {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (!value) return 'Email tidak boleh kosong!';
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>});</p>
+
+<p><strong>Callback Setelah Konfirmasi</strong></p>
+
+<p>js</p>
+
+<p>Swal.fire({</p>
+
+<p>title: ‘Yakin logout?’,</p>
+
+<p>icon: ‘question’,</p>
+
+<p>showCancelButton: true,</p>
+
+<p>confirmButtonText: ‘Ya’,</p>
+
+<p>}).then((result) =&gt; {</p>
+
+<p>if (result.isConfirmed) {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// misalnya redirect atau AJAX
+
+window.location.href = '/logout';
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>});</p>
+
+<p><strong>3.Integrasi SweetAlert2 dengan Framework</strong></p>
+
+<p><strong>jQuery</strong></p>
+
+<p><button id="btn">Klik Saya</button>
+<script>
+  $('#btn').on('click', () =&gt; {
+    Swal.fire('Diklik!', 'Tombol berhasil ditekan.', 'info');
+  });
+</script></p>
+
+<p><strong>React</strong></p>
+
+<p>js
+import Swal from ‘sweetalert2’;</p>
+
+<p>function handleClick() {
+  Swal.fire(‘Hello React!’, ‘Ini contoh dari SweetAlert2’, ‘info’);
+}</p>
+
+<p><strong>Laravel Blade</strong></p>
+
+<p><a onclick="konfirmasi()">Hapus</a>
+<script>
+function konfirmasi() {
+  Swal.fire({
+    title: 'Hapus data?',
+    text: 'Tindakan ini tidak bisa dibatalkan!',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Ya, hapus!'
+  }).then((res) =&gt; {
+    if (res.isConfirmed) {
+      window.location.href = '/hapus';
+    }
+  });
+}
+</script></p>
+
+<p><strong>Tips Penggunaan</strong></p>
+
+<p>Gunakan ikon &amp; warna sesuai konteks (merah untuk error, hijau untuk sukses)</p>
+
+<p>Jangan tampilkan popup terlalu sering (bisa mengganggu pengguna)</p>
+
+<p>Gunakan promise chaining (.then()) untuk aksi lanjutan</p>
+
+<p>Selalu test tampilan popup di berbagai browser</p>
+
+<p><strong>Dokumentasi Resmi</strong></p>
+
+<p>SweetAlert (v1)</p>
+
+<p>SweetAlert2</p>
+
+<p><strong>Kesimpulan</strong></p>
+
+<p>SweetAlert (dan SweetAlert2) adalah alat modern untuk mempercantik notifikasi</p>
+
+<p>dan konfirmasi dalam aplikasi web. Dengan desain elegan, ikon menarik, dan kemampuan</p>
+
+<p>interaktif seperti input form, SweetAlert membuat website kamu terlihat lebih profesional</p>
+
+<p>dan nyaman digunakan.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang SweetAler]]></summary></entry><entry><title type="html">SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" rel="alternate" type="text/html" title="SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SCSS%20dan%20SASS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"><![CDATA[<p>Materi tentang SASS dan SCSS</p>
+
+<h2 id="apa-itu-sass-dan-scss">Apa Itu SASS dan SCSS?</h2>
+
+<p>SASS dan SCSS adalah bagian dari Sass (Syntactically Awesome Stylesheets),</p>
+
+<p>yaitu CSS Preprocessor yang memungkinkan kamu menulis CSS dengan fitur yang</p>
+
+<p>lebih canggih dan efisien.</p>
+
+<p>Sass membuat CSS lebih powerful, modular, dan lebih mudah dikelola dalam proyek besar.</p>
+
+<p><strong>1. Apa Itu SASS?</strong></p>
+
+<p>SASS adalah format lama (indented syntax) dari Sass yang tidak menggunakan tanda kurung</p>
+
+<p>{} dan titik koma ;, melainkan menggunakan indentasi (spasi/tab) sebagai penanda blok.</p>
+
+<p><strong>Contoh SASS (Indent-Based Syntax)</strong></p>
+
+<p>sass
+$primary-color: #e67e22</p>
+
+<p>body
+  background-color: $primary-color</p>
+
+<p>h1
+  font-size: 2rem
+  color: white
+🔧 Karakteristik SASS:
+Tidak menggunakan {} atau ;</p>
+
+<p>Penulisan lebih ringkas</p>
+
+<p>Cocok bagi yang menyukai gaya minimalis seperti Python</p>
+
+<p><strong>2. Apa Itu SCSS?</strong></p>
+
+<p>SCSS (Sassy CSS) adalah versi modern dari Sass yang menggunakan sintaks mirip</p>
+
+<p>CSS biasa — lengkap dengan kurung kurawal {}, titik koma ;, dan aturan CSS standar.</p>
+
+<p><strong>Contoh SCSS (CSS-like Syntax)</strong></p>
+
+<p>scss
+$primary-color: #e67e22;</p>
+
+<p>body {
+  background-color: $primary-color;
+}</p>
+
+<p>h1 {
+  font-size: 2rem;
+  color: white;
+}</p>
+
+<p><strong>Karakteristik SCSS</strong></p>
+
+<p>Semua file CSS valid juga merupakan file SCSS valid</p>
+
+<p>Lebih mudah diadopsi oleh developer yang sudah terbiasa dengan CSS</p>
+
+<p>Saat ini lebih populer dan sering digunakan</p>
+
+<h2 id="fitur-unggulan-sassscss-yang-tidak-ada-di-css-biasa">Fitur Unggulan SASS/SCSS (yang tidak ada di CSS biasa)</h2>
+
+<p>Fitur	Fungsi</p>
+
+<p>Variabel	Menyimpan nilai warna, font, ukuran, dll.</p>
+
+<p>Nesting	Menulis selector CSS di dalam selector lain (mirip struktur HTML)</p>
+
+<p>Partials	Membagi file CSS besar ke file kecil dan mengimpor kembali (@use)</p>
+
+<p>Mixin	Blok kode CSS reusable dengan parameter</p>
+
+<p>Inheritance (@extend)	Mewarisi style dari selector lain</p>
+
+<p>Function	Membuat fungsi kustom untuk logika styling</p>
+
+<p>Contoh Fitur SCSS</p>
+
+<p><strong>Variabel</strong></p>
+
+<p>scss
+$main-font: ‘Poppins’, sans-serif;
+$bg-color: #f4f4f4;</p>
+
+<p>body {
+  font-family: $main-font;
+  background-color: $bg-color;
+}</p>
+
+<p><strong>Nesting</strong></p>
+
+<p>scss
+nav {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+    }
+  }
+}</p>
+
+<p><strong>Mixin</strong></p>
+
+<p>scss
+@mixin card($radius) {
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: $radius;
+}</p>
+
+<p>.card {
+  @include card(12px);
+}
+🔹 Extend (Inheritance)
+scss
+%base-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}</p>
+
+<p>.btn-primary {
+  @extend %base-button;
+  background-color: blue;
+  color: white;
+}</p>
+
+<p>.btn-secondary {
+  @extend %base-button;
+  background-color: gray;
+}</p>
+
+<h2 id="perbedaan-sass-vs-scss">Perbedaan SASS vs SCSS</h2>
+
+<p>Fitur	SASS	SCSS</p>
+
+<p>Sintaks	Indentasi (tanpa {} dan ;)	Seperti CSS (pakai {} dan ;)</p>
+
+<p>Populeritas	Kurang populer, digunakan khusus	Lebih umum, banyak digunakan</p>
+
+<p>Kemudahan	Lebih singkat, tapi harus hati-hati indentasi	Lebih fleksibel, cocok untuk semua</p>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>SASS dan SCSS adalah alat bantu untuk menulis CSS dengan cara yang lebih terstruktur,</p>
+
+<p>efisien, dan canggih.</p>
+
+<p>SCSS lebih umum digunakan karena kompatibel dengan CSS.</p>
+
+<p>Dengan menggunakan SCSS/SASS, kamu dapat:</p>
+
+<p>Menyederhanakan file CSS besar</p>
+
+<p>Menggunakan variabel dan fungsi</p>
+
+<p>Membuat styling lebih modular dan reusable</p>
+
+<p>Jadi, untuk proyek front-end modern, SCSS/SASS sangat direkomendasikan agar</p>
+
+<p>kodenya tidak hanya cantik di tampilan, tapi juga rapi dan mudah dikelola di balik layar.</p>
+
+<p>Kalau kamu ingin, aku bisa bantu buatkan template folder SCSS lengkap dengan main.scss,</p>
+
+<p>partials seperti _variables.scss, _mixins.scss, dan cara kompilasinya ke CSS menggunakan</p>
+
+<p>Sass CLI atau Live Sass Compiler di VS Code. Cukup bilang saja!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang SASS dan SCSS]]></summary></entry><entry><title type="html">Splugin dalam pengembangan web</title><link href="http://localhost:4000/2025/04/24/Plugin-dalam-Pengembangan-web.html" rel="alternate" type="text/html" title="Splugin dalam pengembangan web" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugin%20-dalam-Pengembangan-web</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugin-dalam-Pengembangan-web.html"><![CDATA[<p>Materi tentang plugin dalam pengembangan web</p>
+
+<h2 id="apa-itu-plugin-dalam-pengembangan-web">Apa itu plugin dalam pengembangan web?</h2>
+
+<p>Plugin dalam pengembangan web adalah modul tambahan atau ekstensi yang</p>
+
+<p>dapat ditambahkan ke aplikasi atau platform untuk memberikan fitur baru</p>
+
+<p>tanpa harus mengubah struktur utama dari sistem tersebut.</p>
+
+<p>Sederhananya: Plugin adalah “alat bantu tambahan” yang menambahkan kemampuan</p>
+
+<p>baru ke website atau aplikasi tanpa harus membuat semuanya dari awal.</p>
+
+<p><strong>Tujuan dan Manfaat Plugin</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Menambahkan fitur dengan cepat, tanpa coding dari awal
+
+Menghemat waktu dan tenaga dalam pengembangan
+
+Meningkatkan fleksibilitas dan skalabilitas website
+
+Memungkinkan integrasi dengan layanan pihak ketiga
+</code></pre></div></div>
+
+<h2 id="jenis-jenis-plugin-dalam-pengembangan-web">Jenis jenis Plugin dalam pengembangan web</h2>
+
+<p><strong>1. Plugin CMS (Content Management System)</strong></p>
+
+<p>Digunakan untuk menambah fitur pada platform seperti WordPress, Joomla, atau Drupal.</p>
+
+<p>Contoh:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Yoast SEO (WordPress) → membantu optimasi SEO
+WooCommerce → menambahkan fitur toko online
+Elementor → drag-and-drop page builder
+</code></pre></div></div>
+
+<p><strong>2. Plugin JavaScript / jQuery</strong></p>
+
+<p>Kode tambahan berbasis JavaScript yang memberikan interaktivitas.</p>
+
+<p>Contoh:</p>
+
+<script src="jquery.min.js"></script>
+
+<script src="jquery.sliderplugin.js"></script>
+
+<p>Fungsinya bisa seperti:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Slider / carousel
+Tooltip
+Modal pop-up
+</code></pre></div></div>
+
+<p><strong>3. Plugin untuk Framework</strong></p>
+
+<p>Plugin untuk framework frontend atau backend seperti:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>React: React Router, Redux DevTools
+Vue.js: Vuex, Vue Router
+Laravel (PHP): Laravel Debugbar, Laravel Socialite
+Tailwind CSS: tailwind-forms, typography plugin
+</code></pre></div></div>
+
+<p><strong>4. Plugin Browser Developer Tools</strong></p>
+
+<p>Untuk membantu debugging dan pengujian, contohnya:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>React Developer Tools
+Vue Devtools
+Redux DevTools
+</code></pre></div></div>
+
+<p><strong>5. Plugin Build Tools / Bundler</strong></p>
+
+<p>Build Tools atau Bundler adalah alat bantu dalam pengembangan web modern yang bertugas untuk:</p>
+
+<p>Menggabungkan (bundle) file JavaScript, CSS, gambar, dan lainnya menjadi satu atau beberapa file</p>
+
+<p>Mengoptimalkan ukuran file (minify, compress)</p>
+
+<p>Mengonversi kode modern agar kompatibel dengan browser lama (transpile)</p>
+
+<p>Menyediakan fitur seperti hot reload, live server,</p>
+
+<h2 id="menambahkan-kemampuan-pada-alat-seperti-webpack-vite-atau-rollup">Menambahkan kemampuan pada alat seperti Webpack, Vite, atau Rollup.</h2>
+
+<p>Contoh:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html-webpack-plugin → menyuntikkan file HTML ke dalam build
+vite-plugin-pwa → menambahkan fitur Progressive Web App
+</code></pre></div></div>
+
+<p>Bagaimana cara kerja Plugin?</p>
+
+<p>Plugin bekerja dengan cara mengaitkan (hook) dirinya ke dalam sistem utama (misalnya CMS atau framework), dan kemudian menambahkan fungsionalitas tertentu.</p>
+
+<p>Contoh:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sistem utama menyediakan titik masuk (hook atau event)
+Plugin memanfaatkan hook tersebut untuk menyisipkan kode
+Ketika event terjadi (misal: saat halaman dimuat), plugin dijalankan
+</code></pre></div></div>
+
+<p><strong>Cara menggunakan plugin</strong></p>
+
+<p><strong>Di WordPress</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Masuk ke Dashboard → Plugins → Add New
+Cari plugin → Klik Install → Activate
+</code></pre></div></div>
+
+<p>Di Project JavaScript (npm):</p>
+
+<p>npm install react-router-dom</p>
+
+<p><strong>Kemudian</strong></p>
+
+<p>import { BrowserRouter, Route } from ‘react-router-dom’;</p>
+
+<p><strong>i Laravel</strong></p>
+
+<p>composer require barryvdh/laravel-debugbar</p>
+
+<p>Keuntungan dan kekurangan
+<strong>Keuntungan</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mudah digunakan
+Hemat waktu pengembangan
+Komunitas besar dan dokumentasi lengkap
+</code></pre></div></div>
+
+<p><strong>Kekurangan</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bisa menambah beban loading jika terlalu banyak
+Keamanan bisa terganggu jika plugin tidak terpercaya
+Ketergantungan pada pihak ketiga
+</code></pre></div></div>
+
+<p><strong>Kesimpulan</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Plugin adalah ekstensi yang menambah fungsionalitas ke sistem web (CMS, framework, browser, dll).
+Digunakan untuk menghemat waktu dan meningkatkan kemampuan aplikasi tanpa harus membuat fitur dari awal.
+Wajib dikelola dengan baik, agar tidak menimbulkan masalah performa atau keamanan.
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang plugin dalam pengembangan web]]></summary></entry><entry><title type="html">config.yml</title><link href="http://localhost:4000/2025/04/17/Config.yml.html" rel="alternate" type="text/html" title="config.yml" /><published>2025-04-17T00:00:00+07:00</published><updated>2025-04-17T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/17/Config.yml</id><content type="html" xml:base="http://localhost:4000/2025/04/17/Config.yml.html"><![CDATA[<p>Materi tentang config.yml</p>
+
+<h2 id="apa-itu-configyml-di-jekyll">Apa Itu config.yml di Jekyll?</h2>
+
+<p>config.yml adalah file konfigurasi utama dalam proyek Jekyll, sebuah platform pembuat situs statis</p>
+
+<p>berbasis Ruby. File ini menjadi pusat pengaturan yang menentukan bagaimana Jekyll membangun</p>
+
+<p>dan merender website kamu.</p>
+
+<p>Ibaratnya,config.yml adalah “panel kontrol” dari seluruh situs Jekyll milikmu.</p>
+
+<p>Letak dan Format File,File ini selalu berada di direktori root proyek Jekyll</p>
+
+<p>(sejajar dengan index.md, _posts/, dsb).Menggunakan format YAML</p>
+
+<p>(YAML Ain’t Markup Language) yang sederhana dan bersih.Hanya boleh menggunakan spasi,</p>
+
+<p>bukan tab.</p>
+
+<h2 id="struktur-dasar-configyml">Struktur Dasar config.yml</h2>
+
+<p>Contoh konfigurasi minimal untuk blog milik seorang pengguna bernama alisya:</p>
+
+<p>title: Blog alisya</p>
+
+<p>description: Berbagi cerita dan ilmu dengan dunia</p>
+
+<p>url: “https://alisyateriana.github.io”</p>
+
+<p>baseurl: “kosong jika tidak di subfolder”</p>
+
+<p>theme: minima</p>
+
+<p>Penjelasan:</p>
+
+<p>Properti	Fungsi</p>
+
+<p>title	Judul utama situs, ditampilkan di tab browser atau header description	Deskripsi</p>
+
+<p>singkat untuk SEO dan halaman utama url	Alamat utama situs (jika dipublish ke GitHub Pages</p>
+
+<p>atau domain pribadi) baseurl	Diisi jika situs berada di subfolder, kosong jika langsung</p>
+
+<p>di root theme	Tema yang digunakan (default: minima, atau bisa diganti sesuai selera)</p>
+
+<h2 id="menambahkan-plugin">Menambahkan Plugin</h2>
+
+<p>Jekyll bisa diperluas dengan plugin, misalnya untuk feed, SEO, sitemap, dsb.</p>
+
+<p>plugins:</p>
+<ul>
+  <li>
+    <p>jekyll-feed</p>
+  </li>
+  <li>
+    <p>jekyll-seo-tag</p>
+  </li>
+  <li>
+    <p>jekyll-paginate</p>
+  </li>
+</ul>
+
+<p>jekyll-feed → Membuat feed RSS otomatis</p>
+
+<p>jekyll-seo-tag → Menambahkan tag meta SEO</p>
+
+<p>jekyll-paginate → Mengatur pagination artikel</p>
+
+<p>Untuk menggunakan plugin di GitHub Pages, pastikan hanya memakai plugin yang didukung (whitelisted).</p>
+
+<h2 id="pengaturan-penulis-dan-metadata">Pengaturan Penulis dan Metadata</h2>
+
+<p>author:</p>
+
+<p>name: alisya teriana</p>
+
+<p>email: alisyateriana@example.com</p>
+
+<p>Digunakan untuk menampilkan nama dan kontak penulis di footer, sidebar, atau halaman post.</p>
+
+<h2 id="struktur-url--navigasi">Struktur URL &amp; Navigasi</h2>
+
+<p>permalink: /:title/</p>
+
+<p>paginate: 6</p>
+
+<p>paginate_path: “/halaman/:num”</p>
+
+<p>permalink → Menentukan format URL postingan (default: /:categories/:year/:month/:day/:title.html)</p>
+
+<p>paginate → Jumlah postingan per halaman (butuh jekyll-paginate)</p>
+
+<p>paginate_path → Struktur URL untuk halaman selanjutnya</p>
+
+<h2 id="markdown-dan-highlighting">Markdown dan Highlighting</h2>
+
+<p>markdown: kramdown</p>
+
+<p>highlighter: rouge</p>
+
+<p>markdown: Mesin pemroses Markdown. Default Jekyll adalah kramdown.</p>
+
+<p>highlighter: Untuk syntax highlighting di blok kode. Default: rouge.</p>
+
+<p>Variabel Kustom (Custom Variables)</p>
+
+<p>Kamu bisa menambahkan variabel khusus yang bisa dipanggil di layout atau template Jekyll:</p>
+
+<p>yml
+social:
+  github: https://github.com/alisyateriana</p>
+
+<p>instagram: https://instagram.com/alisyateriana</p>
+
+<p>linkedin: https://linkedin.com/in/alisyateriana</p>
+
+<p>Di dalam file .html kamu bisa memanggilnya seperti ini:</p>
+
+<p><a href="">GitHub</a></p>
+
+<h2 id="build-multi-konfigurasi">Build Multi-Konfigurasi</h2>
+
+<p>Untuk membedakan antara build pengembangan (dev) dan produksi (prod):</p>
+
+<p>bash
+jekyll build –config _config.yml,_config-dev.yml</p>
+
+<p>Dengan cara ini, kamu bisa punya 2 versi file:</p>
+
+<p>config.yml → Konfigurasi utama untuk produksi</p>
+
+<p>config-dev.yml → Khusus untuk lokal/testing (misalnya menonaktifkan SEO tag atau analytics)</p>
+
+<p>Tips Penting
+Gunakan 2 spasi untuk indentasi (bukan tab).</p>
+
+<p>Tambahkan komentar dengan tanda #.</p>
+
+<p>Jangan letakkan file config.yml di dalam folder — harus di root.</p>
+
+<p>Restart server (jekyll serve) setiap kali mengubah _config.yml.</p>
+
+<p>Kesimpulan</p>
+
+<p>File config.yml adalah pusat pengaturan utama dalam proyek Jekyll.</p>
+
+<p>Dengan file ini, kamu bisa: Menentukan identitas situs (judul, deskripsi, penulis)</p>
+
+<p>Mengelola tema dan plugin, Mengatur struktur URL dan pagination</p>
+
+<p>Menyimpan metadata khusus seperti media sosial atau lisensi</p>
+
+<p>Ibaratnya, _config.yml adalah “panel kontrol” dari seluruh situs Jekyll milikmu.</p>
+
+<p>Letak dan Format File
+File ini selalu berada di direktori root proyek Jekyll (sejajar dengan index.md, _posts/, dsb).</p>
+
+<p>Menggunakan format YAML (YAML Ain’t Markup Language) yang sederhana dan bersih.</p>
+
+<p>Hanya boleh menggunakan spasi, bukan tab.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang config.yml]]></summary></entry><entry><title type="html">HTML Link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML Link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>Materi tentang link dan lists pada HTML</p>
 
 <h1 id="link-dan-list-dalam-html-">Link dan List dalam HTML 🔗</h1>
 
@@ -50,210 +1680,4 @@
   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#section2"</span><span class="nt">&gt;</span>Bagian 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#section3"</span><span class="nt">&gt;</span>Bagian 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang link dan lists pada HTML]]></summary></entry><entry><title type="html">Layout dan Navigasi</title><link href="http://localhost:4000/2025/03/13/layout-dan-navigation.html" rel="alternate" type="text/html" title="Layout dan Navigasi" /><published>2025-03-13T00:00:00+07:00</published><updated>2025-03-13T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/13/layout-dan-navigation</id><content type="html" xml:base="http://localhost:4000/2025/03/13/layout-dan-navigation.html"><![CDATA[<p>Materi tentang Layout dan Navigasi</p>
-
-<h1 id="layout-dan-navigasi-️">Layout dan Navigasi 🖥️</h1>
-
-<p>Layout di Jekyll digunakan untuk membuat struktur halaman yang konsisten di seluruh situs. Layout ini memungkinkan kamu mengatur header, footer, dan elemen lainnya di seluruh halaman blog kamu.</p>
-
-<h2 id="menyiapkan-layout">Menyiapkan Layout:</h2>
-
-<ol>
-  <li>
-    <p><strong>File <code class="language-plaintext highlighter-rouge">_layouts/default.html</code></strong> adalah template dasar yang akan digunakan oleh halaman lain. Berikut adalah contoh layout untuk halaman utama dengan navigasi:</p>
-
-    <p>```html
-&lt;!DOCTYPE html&gt;</p>
-    <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout dan Navigasi</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main><h1>Belajar Markdown &amp; HTML</h1>
-</main></body></html>
-  </li>
-</ol>
-<p>06 Mar 2025 - </p>
-
-<p>Materi tentang Markdown dan HTML</p>
-
-<h1 id="belajar-markdown-dan-html-">Belajar Markdown dan HTML 📚</h1>
-
-<p>Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platform seperti GitHub dan Jekyll. Dengan Markdown, kamu bisa menulis konten yang mudah dibaca dan otomatis diubah menjadi HTML.</p>
-
-<h2 id="struktur-markdown-dasar">Struktur Markdown Dasar:</h2>
-<ul>
-  <li><strong>Heading</strong>:
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
-<span class="gu">## Heading 2</span>
-<span class="gu">### Heading 3</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Paragraf</strong>: Cukup ketik teks biasa untuk membuat paragraf.
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ini adalah paragraf pertama saya.
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Daftar</strong>:
-    <ul>
-      <li>Daftar tidak berurutan:
-```markdown
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3
-```</li>
-        </ul>
-      </li>
-      <li>Daftar berurutan:
-```markdown
-        <ol>
-          <li>Langkah pertama</li>
-          <li>Langkah kedua</li>
-          <li>Langkah ketiga
-```</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-  <li><strong>Tautan</strong>: Menambahkan tautan sangat mudah dengan Markdown.
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Gambar</strong>:
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt Text</span><span class="p">](</span><span class="sx">https://linkgambar.com/gambar.jpg</span><span class="p">)</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h2 id="keuntungan-menggunakan-markdown">Keuntungan Menggunakan Markdown:</h2>
-<ul>
-  <li><strong>Ringan dan mudah dipelajari</strong>: Cukup dengan simbol dasar seperti <code class="language-plaintext highlighter-rouge">#</code> untuk heading dan <code class="language-plaintext highlighter-rouge">-</code> untuk list.</li>
-  <li><strong>Berguna untuk blog</strong>: Markdown memudahkan pembuatan artikel yang dapat langsung diproses menjadi HTML.</li>
-</ul>
-
-<p>&lt;/main&gt;</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   &lt;footer&gt;
-     &lt;p&gt;&amp;copy; 2025 Balqis Misyia&lt;/p&gt;
-   &lt;/footer&gt;
- &lt;/body&gt;
-</code></pre></div></div>
-<p>&lt;/html&gt;
-   ```</p>
-
-<ol>
-  <li><strong>Navigasi</strong>:
-Navigasi adalah bagian penting dari setiap website. Di atas, kita sudah membuat navigasi dasar menggunakan <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> untuk daftar tautan.</li>
-</ol>
-
-<h2 id="menambahkan-halaman">Menambahkan Halaman:</h2>
-
-<ul>
-  <li><strong>About Page</strong>: Buat halaman <code class="language-plaintext highlighter-rouge">about.md</code> dengan konten tentang kamu, dan Jekyll akan otomatis menghubungkannya dengan navigasi.</li>
-</ul>
-
-<h2 id="tips">Tips:</h2>
-
-<ul>
-  <li>Jangan lupa untuk menambahkan CSS di file <code class="language-plaintext highlighter-rouge">assets/css/style.css</code> agar tampilan lebih menarik.</li>
-  <li>Gunakan <strong>partials</strong> untuk elemen yang sering muncul seperti header dan footer, supaya kamu tidak perlu menulis kode yang sama berulang-ulang.</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Layout dan Navigasi]]></summary></entry><entry><title type="html">Belajar Markdown &amp;amp; HTML</title><link href="http://localhost:4000/2025/03/06/markdown-html.html" rel="alternate" type="text/html" title="Belajar Markdown &amp;amp; HTML" /><published>2025-03-06T00:00:00+07:00</published><updated>2025-03-06T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/06/markdown-html</id><content type="html" xml:base="http://localhost:4000/2025/03/06/markdown-html.html"><![CDATA[<p>Materi tentang Markdown dan HTML</p>
-
-<h1 id="belajar-markdown-dan-html-">Belajar Markdown dan HTML 📚</h1>
-
-<p>Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platform seperti GitHub dan Jekyll. Dengan Markdown, kamu bisa menulis konten yang mudah dibaca dan otomatis diubah menjadi HTML.</p>
-
-<h2 id="struktur-markdown-dasar">Struktur Markdown Dasar:</h2>
-<ul>
-  <li><strong>Heading</strong>:
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
-<span class="gu">## Heading 2</span>
-<span class="gu">### Heading 3</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Paragraf</strong>: Cukup ketik teks biasa untuk membuat paragraf.
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ini adalah paragraf pertama saya.
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Daftar</strong>:
-    <ul>
-      <li>Daftar tidak berurutan:
-```markdown
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3
-```</li>
-        </ul>
-      </li>
-      <li>Daftar berurutan:
-```markdown
-        <ol>
-          <li>Langkah pertama</li>
-          <li>Langkah kedua</li>
-          <li>Langkah ketiga
-```</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-  <li><strong>Tautan</strong>: Menambahkan tautan sangat mudah dengan Markdown.
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Gambar</strong>:
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt Text</span><span class="p">](</span><span class="sx">https://linkgambar.com/gambar.jpg</span><span class="p">)</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h2 id="keuntungan-menggunakan-markdown">Keuntungan Menggunakan Markdown:</h2>
-<ul>
-  <li><strong>Ringan dan mudah dipelajari</strong>: Cukup dengan simbol dasar seperti <code class="language-plaintext highlighter-rouge">#</code> untuk heading dan <code class="language-plaintext highlighter-rouge">-</code> untuk list.</li>
-  <li><strong>Berguna untuk blog</strong>: Markdown memudahkan pembuatan artikel yang dapat langsung diproses menjadi HTML.</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Markdown dan HTML]]></summary></entry><entry><title type="html">Instalasi Ruby dan Jekyll</title><link href="http://localhost:4000/2025/02/20/installasi-ruby-dan-jekyll.html" rel="alternate" type="text/html" title="Instalasi Ruby dan Jekyll" /><published>2025-02-20T00:00:00+07:00</published><updated>2025-02-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/02/20/installasi-ruby-dan-jekyll</id><content type="html" xml:base="http://localhost:4000/2025/02/20/installasi-ruby-dan-jekyll.html"><![CDATA[<p>Materi tentang Instalasi Ruby dan Jekyll</p>
-
-<h1 id="instalasi-ruby-dan-jekyll-️">Instalasi Ruby dan Jekyll 🛠️</h1>
-
-<p>Untuk memulai membuat blog menggunakan Jekyll, pastikan kamu sudah menginstal Ruby dan Jekyll di komputer kamu. Jekyll adalah sebuah static site generator yang memungkinkan kamu membuat blog atau website tanpa perlu menggunakan database.</p>
-
-<h2 id="langkah-1-instalasi-ruby-">Langkah 1: Instalasi Ruby 📦</h2>
-<ul>
-  <li><strong>Windows</strong>: Kamu bisa mengunduh Ruby menggunakan <a href="https://rubyinstaller.org/">RubyInstaller</a>. Ikuti petunjuk untuk menginstal Ruby di komputer kamu.</li>
-  <li><strong>macOS/Linux</strong>: Kamu bisa menginstal Ruby dengan menggunakan Homebrew di macOS atau menggunakan package manager di Linux. Jalankan perintah berikut di terminal:
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>ruby
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h2 id="langkah-2-instalasi-jekyll-">Langkah 2: Instalasi Jekyll 🚀</h2>
-<p>Setelah Ruby terinstal, langkah selanjutnya adalah menginstal Jekyll. Untuk menginstalnya, buka terminal dan jalankan perintah berikut:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
-</code></pre></div></div>
-<p>Perintah ini akan menginstal Jekyll dan Bundler, yang berguna untuk mengelola dependensi dalam proyek Jekyll kamu.</p>
-
-<h2 id="langkah-3-membuat-proyek-jekyll-baru-">Langkah 3: Membuat Proyek Jekyll Baru 💻</h2>
-<p>Setelah instalasi selesai, kamu bisa membuat proyek baru dengan perintah berikut:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new nama-proyek
-<span class="nb">cd </span>nama-proyek
-jekyll serve
-</code></pre></div></div>
-<p>Proyek baru kamu sekarang sudah bisa diakses di <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> di browser. Jika berhasil, kamu akan melihat halaman depan website Jekyll yang sudah siap digunakan.</p>
-
-<h2 id="masalah-umum">Masalah Umum:</h2>
-<ul>
-  <li><strong>Jika mendapat error</strong>: Pastikan Ruby dan Jekyll sudah terinstal dengan benar. Jika perlu, coba update Ruby atau periksa kompatibilitas versi.</li>
-  <li><strong>Solusi jika error</strong>: Jika masalah berlanjut, kamu bisa mencari bantuan di <a href="https://talk.jekyllrb.com/">forum Jekyll</a>.</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Instalasi Ruby dan Jekyll]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang link dan lists pada HTML]]></summary></entry></feed>

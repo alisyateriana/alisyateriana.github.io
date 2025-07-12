@@ -1,0 +1,258 @@
+<head>
+  <meta charset="UTF-8">
+  <title>SASS dan SCSS</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SASS dan SCSS | alisya teriana</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="SASS dan SCSS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Materi tentang SASS dan SCSS" />
+<meta property="og:description" content="Materi tentang SASS dan SCSS" />
+<link rel="canonical" href="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" />
+<meta property="og:site_name" content="alisya teriana" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-07T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SASS dan SCSS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-07T00:00:00+07:00","datePublished":"2025-05-07T00:00:00+07:00","description":"Materi tentang SASS dan SCSS","headline":"SASS dan SCSS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"},"url":"http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Home </h1>
+      <p>I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        Friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        Blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <h1>SASS dan SCSS</h1>
+<p>07 May 2025 - </p>
+
+<p>Materi tentang SASS dan SCSS</p>
+
+<h2 id="apa-itu-sass-dan-scss">Apa Itu SASS dan SCSS?</h2>
+
+<p>SASS dan SCSS adalah bagian dari Sass (Syntactically Awesome Stylesheets),</p>
+
+<p>yaitu CSS Preprocessor yang memungkinkan kamu menulis CSS dengan fitur yang</p>
+
+<p>lebih canggih dan efisien.</p>
+
+<p>Sass membuat CSS lebih powerful, modular, dan lebih mudah dikelola dalam proyek besar.</p>
+
+<p><strong>1. Apa Itu SASS?</strong></p>
+
+<p>SASS adalah format lama (indented syntax) dari Sass yang tidak menggunakan tanda kurung</p>
+
+<p>{} dan titik koma ;, melainkan menggunakan indentasi (spasi/tab) sebagai penanda blok.</p>
+
+<p><strong>Contoh SASS (Indent-Based Syntax)</strong></p>
+
+<p>sass
+$primary-color: #e67e22</p>
+
+<p>body
+  background-color: $primary-color</p>
+
+<p>h1
+  font-size: 2rem
+  color: white
+🔧 Karakteristik SASS:
+Tidak menggunakan {} atau ;</p>
+
+<p>Penulisan lebih ringkas</p>
+
+<p>Cocok bagi yang menyukai gaya minimalis seperti Python</p>
+
+<p><strong>2. Apa Itu SCSS?</strong></p>
+
+<p>SCSS (Sassy CSS) adalah versi modern dari Sass yang menggunakan sintaks mirip</p>
+
+<p>CSS biasa — lengkap dengan kurung kurawal {}, titik koma ;, dan aturan CSS standar.</p>
+
+<p><strong>Contoh SCSS (CSS-like Syntax)</strong></p>
+
+<p>scss
+$primary-color: #e67e22;</p>
+
+<p>body {
+  background-color: $primary-color;
+}</p>
+
+<p>h1 {
+  font-size: 2rem;
+  color: white;
+}</p>
+
+<p><strong>Karakteristik SCSS</strong></p>
+
+<p>Semua file CSS valid juga merupakan file SCSS valid</p>
+
+<p>Lebih mudah diadopsi oleh developer yang sudah terbiasa dengan CSS</p>
+
+<p>Saat ini lebih populer dan sering digunakan</p>
+
+<h2 id="fitur-unggulan-sassscss-yang-tidak-ada-di-css-biasa">Fitur Unggulan SASS/SCSS (yang tidak ada di CSS biasa)</h2>
+
+<p>Fitur	Fungsi</p>
+
+<p>Variabel	Menyimpan nilai warna, font, ukuran, dll.</p>
+
+<p>Nesting	Menulis selector CSS di dalam selector lain (mirip struktur HTML)</p>
+
+<p>Partials	Membagi file CSS besar ke file kecil dan mengimpor kembali (@use)</p>
+
+<p>Mixin	Blok kode CSS reusable dengan parameter</p>
+
+<p>Inheritance (@extend)	Mewarisi style dari selector lain</p>
+
+<p>Function	Membuat fungsi kustom untuk logika styling</p>
+
+<p>Contoh Fitur SCSS</p>
+
+<p><strong>Variabel</strong></p>
+
+<p>scss
+$main-font: ‘Poppins’, sans-serif;
+$bg-color: #f4f4f4;</p>
+
+<p>body {
+  font-family: $main-font;
+  background-color: $bg-color;
+}</p>
+
+<p><strong>Nesting</strong></p>
+
+<p>scss
+nav {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+    }
+  }
+}</p>
+
+<p><strong>Mixin</strong></p>
+
+<p>scss
+@mixin card($radius) {
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: $radius;
+}</p>
+
+<p>.card {
+  @include card(12px);
+}
+🔹 Extend (Inheritance)
+scss
+%base-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}</p>
+
+<p>.btn-primary {
+  @extend %base-button;
+  background-color: blue;
+  color: white;
+}</p>
+
+<p>.btn-secondary {
+  @extend %base-button;
+  background-color: gray;
+}</p>
+
+<h2 id="perbedaan-sass-vs-scss">Perbedaan SASS vs SCSS</h2>
+
+<p>Fitur	SASS	SCSS</p>
+
+<p>Sintaks	Indentasi (tanpa {} dan ;)	Seperti CSS (pakai {} dan ;)</p>
+
+<p>Populeritas	Kurang populer, digunakan khusus	Lebih umum, banyak digunakan</p>
+
+<p>Kemudahan	Lebih singkat, tapi harus hati-hati indentasi	Lebih fleksibel, cocok untuk semua</p>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>SASS dan SCSS adalah alat bantu untuk menulis CSS dengan cara yang lebih terstruktur,</p>
+
+<p>efisien, dan canggih.</p>
+
+<p>SCSS lebih umum digunakan karena kompatibel dengan CSS.</p>
+
+<p>Dengan menggunakan SCSS/SASS, kamu dapat:</p>
+
+<p>Menyederhanakan file CSS besar</p>
+
+<p>Menggunakan variabel dan fungsi</p>
+
+<p>Membuat styling lebih modular dan reusable</p>
+
+<p>Jadi, untuk proyek front-end modern, SCSS/SASS sangat direkomendasikan agar</p>
+
+<p>kodenya tidak hanya cantik di tampilan, tapi juga rapi dan mudah dikelola di balik layar.</p>
+
+<p>Kalau kamu ingin, aku bisa bantu buatkan template folder SCSS lengkap dengan main.scss,</p>
+
+<p>partials seperti _variables.scss, _mixins.scss, dan cara kompilasinya ke CSS menggunakan</p>
+
+<p>Sass CLI atau Live Sass Compiler di VS Code. Cukup bilang saja!</p>
+
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 alisya teriana. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

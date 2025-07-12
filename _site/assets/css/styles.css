@@ -1,1 +1,153 @@
-body{font-family:"Poppins",sans-serif;background:linear-gradient(to bottom, #f0faff, #d8f1ff);color:#444;padding:20px;margin:0;overflow-x:hidden;position:relative}body::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-image:radial-gradient(circle 8px, #cfefff 80%, transparent 100%),radial-gradient(circle 10px, #d8f6ff 80%, transparent 100%),radial-gradient(circle 6px, #bae9ff 80%, transparent 100%);background-repeat:repeat;background-size:150px 150px;animation:bubbleUp 30s linear infinite;z-index:0;opacity:.3}@keyframes bubbleUp{from{background-position:0 100%}to{background-position:0 0%}}h2{color:#4aa3df;font-size:36px;text-align:center;font-weight:bold;text-transform:uppercase;letter-spacing:2px;position:relative;z-index:1}ol{list-style-type:decimal;padding-left:25px;color:#298ecf;font-size:18px;z-index:1;position:relative}.blog-entry p{color:#3e6073;font-size:18px;line-height:1.8;text-align:justify;margin-bottom:20px;position:relative;z-index:1}li{background-color:#e0f4ff;color:#07a;padding:16px 20px;margin:12px 0;border-radius:25px;font-weight:bold;font-size:18px;box-shadow:0 5px 15px rgba(0,150,200,.2);transition:all .3s ease;position:relative;z-index:1}li:hover{background-color:#cef;transform:scale(1.05);box-shadow:0 10px 20px rgba(0,150,200,.3)}nav{display:flex;gap:1.5rem;padding:1.5rem;justify-content:center;background-color:#daf3ff;border-radius:30px;box-shadow:0 8px 15px rgba(0,170,220,.2);position:relative;z-index:2}nav a{padding:12px 30px;border-radius:25px;background-color:#66cfff;color:#fff;text-decoration:none;font-weight:bold;transition:all .3s ease;box-shadow:0 4px 8px rgba(0,170,220,.3)}nav a:hover{background-color:#4aa3df;transform:scale(1.05)}nav a.active{background-color:#cef;color:#07a}/*# sourceMappingURL=styles.css.map */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #e0f7ff, #a0e9ff);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 24px;
+  color: #fff;
+  background: linear-gradient(to right, #a0e9ff, #00bfff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 24px;
+  margin-top: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  margin-top: 24px;
+  color: #fff;
+  background: linear-gradient(to right, #00bfff, #a0e9ff);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+nav {
+  margin: 24px 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #a0e9ff, #00bfff);
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+nav li a:hover:not(.active) {
+  background: linear-gradient(to right, #b3ecff, #66dfff);
+  transform: scale(1.05);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 24px auto;
+  background-color: #e0f7ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  background: linear-gradient(to right, #b3ecff, #66dfff);
+}
+
+.artikel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+}
+.artikel h3, .artikel h4 {
+  margin-top: 16px;
+  color: #0077b6;
+}
+.artikel p {
+  margin-bottom: 12px;
+}
+.artikel code {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+.artikel pre {
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+.artikel ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+/* Buat semua link di dalam <ol> atau <ul> jadi biru */
+ol li a, ul li a {
+  color: #007bff; /* Biru elegan */
+  text-decoration: none;
+}
+
+ol li a:hover, ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Semua link <a> jadi biru */
+a {
+  color: #007bff; /* Warna biru yang bagus */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Saat mouse diarahkan ke link */
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Biru lebih gelap saat hover */
+}
+
+/*# sourceMappingURL=styles.css.map */

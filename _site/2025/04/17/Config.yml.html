@@ -1,0 +1,244 @@
+<head>
+  <meta charset="UTF-8">
+  <title>config.yml</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>config.yml | alisya teriana</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="config.yml" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Materi tentang config.yml" />
+<meta property="og:description" content="Materi tentang config.yml" />
+<link rel="canonical" href="http://localhost:4000/2025/04/17/Config.yml.html" />
+<meta property="og:url" content="http://localhost:4000/2025/04/17/Config.yml.html" />
+<meta property="og:site_name" content="alisya teriana" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-17T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="config.yml" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-17T00:00:00+07:00","datePublished":"2025-04-17T00:00:00+07:00","description":"Materi tentang config.yml","headline":"config.yml","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/17/Config.yml.html"},"url":"http://localhost:4000/2025/04/17/Config.yml.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Home </h1>
+      <p>I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        Friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        Blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <h1>config.yml</h1>
+<p>17 Apr 2025 - </p>
+
+<p>Materi tentang config.yml</p>
+
+<h2 id="apa-itu-configyml-di-jekyll">Apa Itu config.yml di Jekyll?</h2>
+
+<p>config.yml adalah file konfigurasi utama dalam proyek Jekyll, sebuah platform pembuat situs statis</p>
+
+<p>berbasis Ruby. File ini menjadi pusat pengaturan yang menentukan bagaimana Jekyll membangun</p>
+
+<p>dan merender website kamu.</p>
+
+<p>Ibaratnya,config.yml adalah “panel kontrol” dari seluruh situs Jekyll milikmu.</p>
+
+<p>Letak dan Format File,File ini selalu berada di direktori root proyek Jekyll</p>
+
+<p>(sejajar dengan index.md, _posts/, dsb).Menggunakan format YAML</p>
+
+<p>(YAML Ain’t Markup Language) yang sederhana dan bersih.Hanya boleh menggunakan spasi,</p>
+
+<p>bukan tab.</p>
+
+<h2 id="struktur-dasar-configyml">Struktur Dasar config.yml</h2>
+
+<p>Contoh konfigurasi minimal untuk blog milik seorang pengguna bernama alisya:</p>
+
+<p>title: Blog alisya</p>
+
+<p>description: Berbagi cerita dan ilmu dengan dunia</p>
+
+<p>url: “https://alisyateriana.github.io”</p>
+
+<p>baseurl: “kosong jika tidak di subfolder”</p>
+
+<p>theme: minima</p>
+
+<p>Penjelasan:</p>
+
+<p>Properti	Fungsi</p>
+
+<p>title	Judul utama situs, ditampilkan di tab browser atau header description	Deskripsi</p>
+
+<p>singkat untuk SEO dan halaman utama url	Alamat utama situs (jika dipublish ke GitHub Pages</p>
+
+<p>atau domain pribadi) baseurl	Diisi jika situs berada di subfolder, kosong jika langsung</p>
+
+<p>di root theme	Tema yang digunakan (default: minima, atau bisa diganti sesuai selera)</p>
+
+<h2 id="menambahkan-plugin">Menambahkan Plugin</h2>
+
+<p>Jekyll bisa diperluas dengan plugin, misalnya untuk feed, SEO, sitemap, dsb.</p>
+
+<p>plugins:</p>
+<ul>
+  <li>
+    <p>jekyll-feed</p>
+  </li>
+  <li>
+    <p>jekyll-seo-tag</p>
+  </li>
+  <li>
+    <p>jekyll-paginate</p>
+  </li>
+</ul>
+
+<p>jekyll-feed → Membuat feed RSS otomatis</p>
+
+<p>jekyll-seo-tag → Menambahkan tag meta SEO</p>
+
+<p>jekyll-paginate → Mengatur pagination artikel</p>
+
+<p>Untuk menggunakan plugin di GitHub Pages, pastikan hanya memakai plugin yang didukung (whitelisted).</p>
+
+<h2 id="pengaturan-penulis-dan-metadata">Pengaturan Penulis dan Metadata</h2>
+
+<p>author:</p>
+
+<p>name: alisya teriana</p>
+
+<p>email: alisyateriana@example.com</p>
+
+<p>Digunakan untuk menampilkan nama dan kontak penulis di footer, sidebar, atau halaman post.</p>
+
+<h2 id="struktur-url--navigasi">Struktur URL &amp; Navigasi</h2>
+
+<p>permalink: /:title/</p>
+
+<p>paginate: 6</p>
+
+<p>paginate_path: “/halaman/:num”</p>
+
+<p>permalink → Menentukan format URL postingan (default: /:categories/:year/:month/:day/:title.html)</p>
+
+<p>paginate → Jumlah postingan per halaman (butuh jekyll-paginate)</p>
+
+<p>paginate_path → Struktur URL untuk halaman selanjutnya</p>
+
+<h2 id="markdown-dan-highlighting">Markdown dan Highlighting</h2>
+
+<p>markdown: kramdown</p>
+
+<p>highlighter: rouge</p>
+
+<p>markdown: Mesin pemroses Markdown. Default Jekyll adalah kramdown.</p>
+
+<p>highlighter: Untuk syntax highlighting di blok kode. Default: rouge.</p>
+
+<p>Variabel Kustom (Custom Variables)</p>
+
+<p>Kamu bisa menambahkan variabel khusus yang bisa dipanggil di layout atau template Jekyll:</p>
+
+<p>yml
+social:
+  github: https://github.com/alisyateriana</p>
+
+<p>instagram: https://instagram.com/alisyateriana</p>
+
+<p>linkedin: https://linkedin.com/in/alisyateriana</p>
+
+<p>Di dalam file .html kamu bisa memanggilnya seperti ini:</p>
+
+<p><a href="">GitHub</a></p>
+
+<h2 id="build-multi-konfigurasi">Build Multi-Konfigurasi</h2>
+
+<p>Untuk membedakan antara build pengembangan (dev) dan produksi (prod):</p>
+
+<p>bash
+jekyll build –config _config.yml,_config-dev.yml</p>
+
+<p>Dengan cara ini, kamu bisa punya 2 versi file:</p>
+
+<p>config.yml → Konfigurasi utama untuk produksi</p>
+
+<p>config-dev.yml → Khusus untuk lokal/testing (misalnya menonaktifkan SEO tag atau analytics)</p>
+
+<p>Tips Penting
+Gunakan 2 spasi untuk indentasi (bukan tab).</p>
+
+<p>Tambahkan komentar dengan tanda #.</p>
+
+<p>Jangan letakkan file config.yml di dalam folder — harus di root.</p>
+
+<p>Restart server (jekyll serve) setiap kali mengubah _config.yml.</p>
+
+<p>Kesimpulan</p>
+
+<p>File config.yml adalah pusat pengaturan utama dalam proyek Jekyll.</p>
+
+<p>Dengan file ini, kamu bisa: Menentukan identitas situs (judul, deskripsi, penulis)</p>
+
+<p>Mengelola tema dan plugin, Mengatur struktur URL dan pagination</p>
+
+<p>Menyimpan metadata khusus seperti media sosial atau lisensi</p>
+
+<p>Ibaratnya, _config.yml adalah “panel kontrol” dari seluruh situs Jekyll milikmu.</p>
+
+<p>Letak dan Format File
+File ini selalu berada di direktori root proyek Jekyll (sejajar dengan index.md, _posts/, dsb).</p>
+
+<p>Menggunakan format YAML (YAML Ain’t Markup Language) yang sederhana dan bersih.</p>
+
+<p>Hanya boleh menggunakan spasi, bukan tab.</p>
+
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 alisya teriana. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

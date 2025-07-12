@@ -1,0 +1,230 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Bootstrap | alisya teriana</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Bootstrap" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Materi tentang Bootstrap" />
+<meta property="og:description" content="Materi tentang Bootstrap" />
+<link rel="canonical" href="http://localhost:4000/2025/06/02/Bootstrap.html" />
+<meta property="og:url" content="http://localhost:4000/2025/06/02/Bootstrap.html" />
+<meta property="og:site_name" content="alisya teriana" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-02T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bootstrap" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-02T00:00:00+07:00","datePublished":"2025-06-02T00:00:00+07:00","description":"Materi tentang Bootstrap","headline":"Bootstrap","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/06/02/Bootstrap.html"},"url":"http://localhost:4000/2025/06/02/Bootstrap.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Home </h1>
+      <p>I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        Friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        Blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <h1>Bootstrap</h1>
+<p>02 Jun 2025 - </p>
+
+<p>Materi tentang Bootstrap</p>
+
+<h2 id="apa-itu-bootstrap">Apa Itu Bootstrap?</h2>
+
+<p>Bootstrap adalah framework front-end berbasis HTML, CSS, dan JavaScript</p>
+
+<p>yang digunakan untuk membangun antarmuka web (UI) yang modern, responsif,</p>
+
+<p>dan mobile-friendly,Bootstrap dibuat oleh tim dari Twitter pada tahun 2011</p>
+
+<p>(oleh Mark Otto &amp; Jacob Thornton) sebagai solusi agar tampilan web menjadi</p>
+
+<p>seragam di berbagai browser dan perangkat. Kini, Bootstrap sudah menjadi</p>
+
+<p>salah satu framework paling populer di dunia pengembangan web.</p>
+
+<p>Tujuan utama Bootstrap adalah membuat desain web lebih cepat, mudah, dan konsisten.</p>
+
+<p><strong>Kelebihan Bootstrap</strong></p>
+
+<p>Berikut adalah alasan kenapa Bootstrap banyak digunakan</p>
+
+<p><strong>Keunggulan	Penjelasan</strong></p>
+
+<p>Mobile-First	Bootstrap dirancang untuk tampilan perangkat kecil dulu, lalu diperluas.</p>
+
+<p>Responsif	Gunakan grid 12-kolom untuk tampilan fleksibel di semua ukuran layar.</p>
+
+<p>Cepat &amp; Praktis	Tinggal pakai class tanpa menulis CSS panjang.</p>
+
+<p>Komponen Lengkap	Tombol, kartu, form, navigasi, alert, carousel, modal, dll.</p>
+
+<p>Konsisten	Tampilannya stabil di berbagai browser &amp; perangkat.</p>
+
+<p>Dokumentasi	Panduan resmi Bootstrap sangat lengkap dan mudah diikuti.</p>
+
+<h2 id="cara-menggunakan-bootstrap">Cara Menggunakan Bootstrap</h2>
+
+<p><strong>1. Melalui CDN (Cara Praktis)</strong></p>
+
+<p>Cukup tambahkan dua baris kode ke dalam file HTML:</p>
+
+<!-- Tambahkan di dalam <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Tambahkan sebelum </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<p><strong>2. Menggunakan NPM (Untuk Proyek Build Tools)</strong></p>
+
+<p>Jalankan perintah:</p>
+
+<p>npm install bootstrap</p>
+
+<p>Lalu import di file JS atau SCSS kamu:</p>
+
+<p>js
+import ‘bootstrap/dist/css/bootstrap.min.css’;</p>
+
+<p>import ‘bootstrap/dist/js/bootstrap.bundle.min.js’;</p>
+
+<h2 id="komponen-komponen-penting-di-bootstrap">Komponen-Komponen Penting di Bootstrap</h2>
+
+<p>Bootstrap menyediakan banyak komponen siap pakai. Berikut beberapa yang paling sering digunakan:</p>
+
+<p>Tombol</p>
+
+<p><button class="btn btn-primary">Simpan</button>
+<button class="btn btn-danger">Hapus</button></p>
+
+<p><strong>1. Navigasi (Navbar)</strong></p>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">MyWebsite</a>
+</nav>
+
+<p><strong>2.Kartu (Card)</strong></p>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">Judul Card</h5>
+    <p class="card-text">Deskripsi singkat isi konten.</p>
+  </div>
+</div>
+
+<p><strong>3. Formulir (Form)</strong></p>
+
+<form>
+  <div class="mb-3">
+    <label for="nama" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama" />
+  </div>
+</form>
+
+<p><strong>4 .Peringatan (Alert)</strong></p>
+
+<div class="alert alert-warning" role="alert">
+  Peringatan: Form belum lengkap!
+</div>
+
+<p><strong>5. Modal (Dialog Pop-up)</strong></p>
+
+<!-- Tombol pembuka -->
+<p><button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contohModal">Buka Info</button></p>
+
+<!-- Struktur Modal -->
+<div class="modal fade" id="contohModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Judul Modal</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Ini isi dari modal popup.
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><strong>6.Sistem Grid di Bootstrap</strong></p>
+
+<p>Bootstrap menggunakan sistem grid 12 kolom yang fleksibel. Contoh layout 3 kolom seimbang:</p>
+
+<div class="row">
+  <div class="col-4">Kolom 1</div>
+  <div class="col-4">Kolom 2</div>
+  <div class="col-4">Kolom 3</div>
+</div>
+
+<p>Grid ini bisa diatur supaya berbeda di layar kecil (mobile) dan besar (desktop), contoh:</p>
+
+<div class="row">
+
+  <div class="col-12 col-md-6">Kolom 1</div>
+
+  <div class="col-12 col-md-6">Kolom 2</div>
+
+</div>
+
+<p><strong>Kesimpulan</strong></p>
+
+<p>Bootstrap adalah solusi praktis dan cepat untuk membangun tampilan website yang modern,</p>
+
+<p>responsif, dan user-friendly. Tanpa harus menulis CSS dari awal, kamu bisa menggunakan</p>
+
+<p>berbagai komponen siap pakai hanya dengan menambahkan class tertentu.</p>
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 alisya teriana. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Formspree</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Formspree | alisya teriana</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Formspree" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Materi tentang Formspree" />
+<meta property="og:description" content="Materi tentang Formspree" />
+<link rel="canonical" href="http://localhost:4000/2025/06/23/Formspree.html" />
+<meta property="og:url" content="http://localhost:4000/2025/06/23/Formspree.html" />
+<meta property="og:site_name" content="alisya teriana" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-23T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Formspree" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-23T00:00:00+07:00","datePublished":"2025-06-23T00:00:00+07:00","description":"Materi tentang Formspree","headline":"Formspree","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/06/23/Formspree.html"},"url":"http://localhost:4000/2025/06/23/Formspree.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Home </h1>
+      <p>I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        Friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        Blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <h1>Formspree</h1>
+<p>23 Jun 2025 - </p>
+
+<p>Materi tentang Formspree</p>
+
+<h2 id="apa-itu-formspree">Apa Itu Formspree?</h2>
+
+<p>Formspree adalah layanan berbasis cloud yang memungkinkan kamu menerima data</p>
+
+<p>dari formulir HTML langsung ke email tanpa harus membuat backend sendiri,</p>
+
+<p>Dengan kata lain, kamu hanya tinggal membuat form seperti biasa di HTML,</p>
+
+<p>lalu kirim data pengguna ke Formspree, dan mereka akan meneruskan isinya</p>
+
+<p>ke email milikmu.</p>
+
+<p>Cocok untuk situs statis seperti yang dibuat dengan HTML, GitHub Pages,</p>
+
+<p>Netlify, Vercel, atau bahkan Jekyll!</p>
+
+<h2 id="kenapa-pakai-formspree">Kenapa Pakai Formspree?</h2>
+
+<p>Karena tidak semua proyek web membutuhkan backend lengkap. Formspree menjadi</p>
+
+<p>solusi cepat dan sederhana untuk:</p>
+
+<p><strong>Website portofolio atau landing page</strong></p>
+
+<p>Blog pribadi</p>
+
+<p>Proyek tanpa server</p>
+
+<p>Pengembang yang ingin fokus ke frontend</p>
+
+<p><strong>Cara Kerja Formspree</strong></p>
+
+<p>Cara kerja Formspree bisa dijelaskan dalam 3 langkah:</p>
+
+<p>Buat form HTML biasa.</p>
+
+<p>Ganti atribut action ke endpoint Formspree (misalnya https://formspree.io/f/abcxyz).</p>
+
+<p>Ketika form dikirim, Formspree akan memproses data lalu mengirimnya ke email kamu.</p>
+
+<p>Tidak perlu PHP, tidak perlu API khusus, semuanya terjadi di sisi Formspree.</p>
+
+<p><strong>Contoh Form Paling Dasar</strong></p>
+
+<p>html</p>
+
+<form action="https://formspree.io/f/abcxyz" method="POST">
+
+  <input type="text" name="name" placeholder="Nama" required="" />
+
+  <input type="email" name="email" placeholder="Email" required="" />
+
+
+  <textarea name="message" placeholder="Pesan..." required=""></textarea>
+
+  <button type="submit">Kirim</button>
+
+</form>
+
+<p>Gantilah https://formspree.io/f/abcxyz dengan endpoint milikmu sendiri 
+yang bisa kamu dapatkan setelah mendaftar di situs Formspree.</p>
+
+<p>Fitur-Fitur Keren Formspree</p>
+
+<p>Kirim Langsung ke Email</p>
+
+<p>Setiap kali form dikirim, kamu langsung dapat notifikasi email berisi data isian dari pengguna.</p>
+
+<p><strong>edirect Setelah Submit</strong></p>
+
+<p>Kamu bisa mengarahkan user ke halaman “Terima Kasih” menggunakan:</p>
+
+<p>html</p>
+
+<p><input type="hidden" name="_redirect" value="https://websitekamu.com/thanks.html" /></p>
+
+<p><strong>Proteksi Anti-Spam</strong></p>
+
+<p>Gunakan honeypot (field tersembunyi) untuk menangkal bot</p>
+
+<p>Dukung Google reCAPTCHA (di versi Pro)</p>
+
+<p><strong>Validasi</strong></p>
+
+<p>Gunakan validasi HTML5 biasa (seperti required, type=”email”), dan Formspree</p>
+
+<p>akan menghormati validasi tersebut.</p>
+
+<p><strong>Custom Email Subject</strong></p>
+
+<p>Kamu bisa mengatur subjek email:</p>
+
+<p>html</p>
+
+<p><input type="hidden" name="_subject" value="Pesan Baru dari Website" /></p>
+
+<p><strong>Integrasi API &amp; Webhook</strong></p>
+
+<p>Kamu bisa hubungkan data dari form ke:</p>
+
+<p>Google Sheets</p>
+
+<p>Zapier</p>
+
+<p>Notifikasi Slack</p>
+
+<p>atau backend kamu sendiri melalui Webhook</p>
+
+<p><strong>Cara Menggunakan Formspree (Langkah Singkat)</strong></p>
+
+<p>Daftar akun di formspree.io</p>
+
+<p>Buat project baru dan ambil URL endpoint (contoh: https://formspree.io/f/xyzabc)</p>
+
+<p>Masukkan URL tersebut ke dalam atribut action form HTML</p>
+
+<p>Tambahkan field name, email, message, dsb.</p>
+
+<p>Kirim form, dan data akan masuk ke email kamu</p>
+
+<p>(Opsional) Tambahkan redirect, validasi, dan keamanan</p>
+
+<p><strong>Contoh Form Lengkap + Fitur Tambahan</strong></p>
+
+<p>html</p>
+
+<form action="https://formspree.io/f/xyzabc" method="POST">
+
+  <label>Nama:
+
+    <input type="text" name="nama" required="" />
+
+  </label>
+
+  <label>Email:
+
+    <input type="email" name="_replyto" required="" />
+
+  </label>
+
+  <label>Topik:
+
+    <select name="topik">
+
+      <option value="dukungan">Dukungan</option>
+
+      <option value="saran">Saran</option>
+
+    </select>
+
+  </label>
+
+  <label>Pesan:
+
+    <textarea name="pesan" required=""></textarea>
+
+  </label>
+
+  <!-- Redirect, subject, reply -->
+  <input type="hidden" name="_subject" value="Pesan Baru dari Form!" />
+  <input type="hidden" name="_redirect" value="https://websitekamu.com/terima-kasih.html" />
+
+  <!-- Anti-Spam (honeypot) -->
+  <input type="text" name="_gotcha" style="display:none" />
+
+  <button type="submit">Kirim</button>
+</form>
+
+<p><strong>Tips Praktis</strong></p>
+
+<p>Selalu pakai atribut required untuk validasi</p>
+
+<p>Tambahkan _replyto agar bisa langsung membalas dari email</p>
+
+<p>Gunakan honeypot agar form tidak mudah dimanfaatkan bot</p>
+
+<p>Siapkan halaman thank-you.html untuk pengalaman pengguna yang baik</p>
+
+<p>Untuk kebutuhan kompleks, upgrade ke Formspree Pro agar bisa pakai reCAPTCHA dan webhook</p>
+
+<p>Dokumentasi &amp; Bantuan</p>
+
+<p>Website resmi Formspree</p>
+
+<p>Dokumentasi lengkap</p>
+
+<p>GitHub Repository</p>
+
+<p><strong>Kesimpulan</strong></p>
+
+<p>Formspree adalah solusi praktis untuk menerima input dari pengguna tanpa</p>
+
+<p>backend rumit, Cukup buat form HTML biasa, hubungkan ke endpoint Formspree,</p>
+
+<p>dan biarkan mereka mengurus sisanya—mulai dari validasi hingga pengiriman email.</p>
+
+<p>Dengan fitur seperti notifikasi email, integrasi API, proteksi spam, dan kemudahan</p>
+
+<p>penggunaan, Formspree sangat ideal untuk pengembang front-end dan website statis.</p>
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 alisya teriana. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

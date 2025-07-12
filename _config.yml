@@ -1,13 +1,11 @@
-title: Home
-baseurl: ""
+
+
+title: alisya teriana
+email: alisyateriana47@gmail.com
+description: I'm alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.
 url: "https://alisyateriana.github.io/"
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
-theme: null
-
 plugins:
-  - jekyll-feed
-
+ - jekyll-feed
+ - jekyll-sitemap
+ - jekyll-seo-tag
