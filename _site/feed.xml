@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-12T14:58:45+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">alisya teriana</title><subtitle>I&apos;m alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</subtitle><entry><title type="html">Formspree</title><link href="http://localhost:4000/2025/06/23/Formspree.html" rel="alternate" type="text/html" title="Formspree" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/Formspree</id><content type="html" xml:base="http://localhost:4000/2025/06/23/Formspree.html"><![CDATA[<p>Materi tentang Formspree</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-16T14:07:25+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">alisya teriana</title><subtitle>I&apos;m alisya teriana, i am from ACEH TANGGARA.I am currently living in the dormitory of the Lhokseumawe State Polytechnic.</subtitle><entry><title type="html">Formspree</title><link href="http://localhost:4000/2025/06/23/Formspree.html" rel="alternate" type="text/html" title="Formspree" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/Formspree</id><content type="html" xml:base="http://localhost:4000/2025/06/23/Formspree.html"><![CDATA[<p>Materi tentang Formspree</p>
 
 <h2 id="apa-itu-formspree">Apa Itu Formspree?</h2>
 
@@ -1399,13 +1399,15 @@ Redux DevTools
 
 <p><strong>5. Plugin Build Tools / Bundler</strong></p>
 
-<p>Build Tools atau Bundler adalah alat bantu dalam pengembangan web modern yang bertugas untuk:</p>
+<p>Build Tools atau Bundler adalah alat bantu dalam pengembangan web modern</p>
 
-<p>Menggabungkan (bundle) file JavaScript, CSS, gambar, dan lainnya menjadi satu atau beberapa file</p>
+<p>yang bertugas untuk Menggabungkan (bundle) file JavaScript, CSS, gambar,</p>
 
-<p>Mengoptimalkan ukuran file (minify, compress)</p>
+<p>dan lainnya menjadi satu atau beberapa file Mengoptimalkan ukuran file</p>
 
-<p>Mengonversi kode modern agar kompatibel dengan browser lama (transpile)</p>
+<p>(minify, compress) Mengonversi kode modern agar kompatibel dengan browser</p>
+
+<p>lama (transpile)</p>
 
 <p>Menyediakan fitur seperti hot reload, live server,</p>
 
@@ -1630,11 +1632,11 @@ File ini selalu berada di direktori root proyek Jekyll (sejajar dengan index.md,
 
 <p>Hanya boleh menggunakan spasi, bukan tab.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang config.yml]]></summary></entry><entry><title type="html">HTML Link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML Link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>Materi tentang link dan lists pada HTML</p>
 
-<h1 id="link-dan-list-dalam-html-">Link dan List dalam HTML 🔗</h1>
+<h1 id="link-dan-list-dalam-html">Link dan List dalam HTML</h1>
 
 <p>HTML adalah bahasa dasar yang digunakan untuk membuat website, dan di dalamnya terdapat elemen-elemen seperti <strong>link</strong> dan <strong>list</strong> yang sangat berguna.</p>
 
-<h2 id="tautan-link-️">Tautan (Link) 🖇️:</h2>
+<h2 id="tautan-link">Tautan (Link)</h2>
 
 <p>Tautan digunakan untuk menghubungkan halaman-halaman di dalam website atau bahkan ke situs luar. Berikut cara membuat tautan di HTML:</p>
 
@@ -1645,7 +1647,7 @@ File ini selalu berada di direktori root proyek Jekyll (sejajar dengan index.md,
   <li><strong><code class="language-plaintext highlighter-rouge">target="_blank"</code></strong> akan membuka tautan di tab baru.</li>
 </ul>
 
-<h2 id="daftar-list-">Daftar (List) 📜:</h2>
+<h2 id="daftar-list">Daftar (List)</h2>
 
 <p>HTML juga memungkinkan kamu untuk membuat daftar, baik berurutan maupun tidak berurutan.</p>
 

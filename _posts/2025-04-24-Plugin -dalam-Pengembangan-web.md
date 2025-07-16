@@ -78,13 +78,15 @@ Untuk membantu debugging dan pengujian, contohnya:
 
 **5. Plugin Build Tools / Bundler**
 
-Build Tools atau Bundler adalah alat bantu dalam pengembangan web modern yang bertugas untuk:
+Build Tools atau Bundler adalah alat bantu dalam pengembangan web modern 
 
-Menggabungkan (bundle) file JavaScript, CSS, gambar, dan lainnya menjadi satu atau beberapa file
+yang bertugas untuk Menggabungkan (bundle) file JavaScript, CSS, gambar, 
 
-Mengoptimalkan ukuran file (minify, compress)
+dan lainnya menjadi satu atau beberapa file Mengoptimalkan ukuran file 
 
-Mengonversi kode modern agar kompatibel dengan browser lama (transpile)
+(minify, compress) Mengonversi kode modern agar kompatibel dengan browser
+
+lama (transpile)
 
 Menyediakan fitur seperti hot reload, live server,
 

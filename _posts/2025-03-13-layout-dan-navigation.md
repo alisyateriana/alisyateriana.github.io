@@ -6,7 +6,7 @@ date: 2025-03-13
 
 Materi tentang Layout dan Navigasi
 
-# Layout dan Navigasi 🖥️
+# Layout dan Navigasi 
 
 Layout di Jekyll digunakan untuk membuat struktur halaman yang konsisten di seluruh situs. Layout ini memungkinkan kamu mengatur header, footer, dan elemen lainnya di seluruh halaman blog kamu.
 

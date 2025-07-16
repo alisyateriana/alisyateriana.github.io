@@ -6,11 +6,11 @@ date: 2025-03-20
 
 Materi tentang link dan lists pada HTML
 
-# Link dan List dalam HTML 🔗
+# Link dan List dalam HTML 
 
 HTML adalah bahasa dasar yang digunakan untuk membuat website, dan di dalamnya terdapat elemen-elemen seperti **link** dan **list** yang sangat berguna.
 
-## Tautan (Link) 🖇️:
+## Tautan (Link) 
 
 Tautan digunakan untuk menghubungkan halaman-halaman di dalam website atau bahkan ke situs luar. Berikut cara membuat tautan di HTML:
 
@@ -20,7 +20,7 @@ Tautan digunakan untuk menghubungkan halaman-halaman di dalam website atau bahka
 
 - **`target="_blank"`** akan membuka tautan di tab baru.
 
-## Daftar (List) 📜:
+## Daftar (List) 
 
 HTML juga memungkinkan kamu untuk membuat daftar, baik berurutan maupun tidak berurutan.
 

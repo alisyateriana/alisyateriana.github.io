@@ -7,25 +7,25 @@ date: 2025-02-20
 Materi tentang Instalasi Ruby dan Jekyll
 
 
-# Instalasi Ruby dan Jekyll 🛠️
+# Instalasi Ruby dan Jekyll 
 
 Untuk memulai membuat blog menggunakan Jekyll, pastikan kamu sudah menginstal Ruby dan Jekyll di komputer kamu. Jekyll adalah sebuah static site generator yang memungkinkan kamu membuat blog atau website tanpa perlu menggunakan database.
 
-## Langkah 1: Instalasi Ruby 📦
+## Langkah 1: Instalasi Ruby 
 - **Windows**: Kamu bisa mengunduh Ruby menggunakan [RubyInstaller](https://rubyinstaller.org/). Ikuti petunjuk untuk menginstal Ruby di komputer kamu.
 - **macOS/Linux**: Kamu bisa menginstal Ruby dengan menggunakan Homebrew di macOS atau menggunakan package manager di Linux. Jalankan perintah berikut di terminal:
   ```bash
   brew install ruby
   ```
 
-## Langkah 2: Instalasi Jekyll 🚀
+## Langkah 2: Instalasi Jekyll 
 Setelah Ruby terinstal, langkah selanjutnya adalah menginstal Jekyll. Untuk menginstalnya, buka terminal dan jalankan perintah berikut:
 ```bash
 gem install jekyll bundler
 ```
 Perintah ini akan menginstal Jekyll dan Bundler, yang berguna untuk mengelola dependensi dalam proyek Jekyll kamu.
 
-## Langkah 3: Membuat Proyek Jekyll Baru 💻
+## Langkah 3: Membuat Proyek Jekyll Baru 
 Setelah instalasi selesai, kamu bisa membuat proyek baru dengan perintah berikut:
 ```bash
 jekyll new nama-proyek

@@ -7,7 +7,7 @@ date: 2025-03-06
 Materi tentang Markdown dan HTML
 
 
-# Belajar Markdown dan HTML 📚
+# Belajar Markdown dan HTML 
 
 Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platform seperti GitHub dan Jekyll. Dengan Markdown, kamu bisa menulis konten yang mudah dibaca dan otomatis diubah menjadi HTML.
 
